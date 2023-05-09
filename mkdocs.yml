@@ -1,0 +1,22 @@
+site_name: High-Pressure Laser Floating Zone Lab
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - Components of the laser furnaces: components.md
+    - Sample preparation: sampleprep.md
+    - Equipment Setup: poweron.md
+    - Laser control: lasercontrol.md
+    - Translator control: translatorcontrol.md
+    - Sample mounting and alignment: samplemounting.md
+    - Shroud assembly: shroud.md
+    - Sealing the chamber: sealing.md
+    - Pressurizing the chamber: gascontrol.md
+    - Beginning a growth: growth.md
+    - Ending a growth: endgrowth.md
+    - Opening and cleaning the chamber: postgrowth.md
+    - Maintenance: maintenance.md
+
+theme: readthedocs
+
+markdown_extensions:
+  - admonition

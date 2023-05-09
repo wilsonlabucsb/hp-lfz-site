@@ -1,0 +1,16 @@
+# Pressurizing the chamber
+- Prepare low pressure manifold
+    - Gas bottles
+    - Swagelok valves
+    - Mass flow controller
+    - Getter
+- Prepare inlet and outlet valves
+    - Ball valves
+    - Needle valves
+- Safety considerations
+- Pressurize to bottle pressure (~1000 psi)
+- Use compressor to achieve higher pressures (~15,000 psi)
+    - Turning on the compressor
+    - Controlling the compressor stroke rate
+    - Changing the pressure limit of the compressor
+- High pressure gas flow system
