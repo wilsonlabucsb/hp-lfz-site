@@ -1,17 +1,32 @@
-# Welcome to MkDocs
+# Maintenance
+These operations are more advanced than is typical for the average user, and generally should be performed with caution.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Laser Optics
+### Focusing the beam
+### Aligning the beam
+## Translators
+### Aligning the adapter pieces
+### Aligning the sealing surface
+## Chamber
+### Installing new windows
+### Preparing a new chamber
+### Deep cleaning the chamber
+### Leak checking the chamber
+## Chiller
+### Antibioloical treatment
+### Replacing the cooling water
+## Cooling lines
+### Repairing the cooling lines
+## Gas manifold
+### Replacing the gas bottle
+### Swagelok tubing (low-pressure)
+### Maxpro tubing (high-pressure)
+### Leak checking
+## Compressor 
+### Repairing the pressure seals
+## Structural frame
+### Positioning / aligning the chamber
+### Counter weights and pulleys
+## Updating this website
+### Mkdocs
+### GitHub
