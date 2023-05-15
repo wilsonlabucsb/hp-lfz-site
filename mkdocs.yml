@@ -1,8 +1,7 @@
 site_name: High-Pressure Laser Floating Zone Lab
 site_url: https://example.com/
 nav:
-    - Home: index.md
-    - Components of the laser furnaces: components.md
+    - Welcome: index.md
     - Sample preparation: sampleprep.md
     - Equipment Setup: poweron.md
     - Laser control: lasercontrol.md
@@ -20,3 +19,12 @@ theme: readthedocs
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

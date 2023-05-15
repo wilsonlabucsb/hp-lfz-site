@@ -1,19 +1,11 @@
-# Welcome to the High-Pressure Laser Floating Zone Lab Documentation!
+<p align="center">
+  <img src="headerimage.png" />
+</p>
 
-![LaserLabImage](image.png)
+# Welcome to the High-Pressure Laser Floating Zone Lab Documentation!
 
 The high-pressure laser floating zone furnaces enable synthesis of a wide variety of volatile and metastable phases, at pressures up to 1,000 bar. For more details about the furnace capabilities, see the publications for the two iterations of the furnace, [LAPIS](https://pubs.aip.org/aip/rsi/article/90/4/043906/283212/High-pressure-laser-floating-zone-furnace) and LOKII (TBD).
 
-!!! warning
-    This is a warning.
-!!! note
-    This is a note.
-!!! tip
-    This is a tip.
-!!! info
-    This is info.
-!!! danger
-    This is danger.
 ---
 
 ## Getting started
@@ -28,4 +20,15 @@ Steven Gomez Alvarado is the laser lab manager, [contact via email](mailto:steve
 
 
 ### SOPs
-...add links to SOPs!
+
+!!! note
+    Several of these documents are outdated. The most up-to-date SOPs can be found on this site.
+
+
+- [HP-LFZ Furnace Manual](https://docs.google.com/document/d/1T6wNjcXcsTjOn82LcIvGhfddFYWkCMtU/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [Window Mounting Process](https://docs.google.com/document/d/1MCyMGJZBJyg33lF6lx_pit7Ao_3ZnSib/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [Sample Mounting Procedure](https://docs.google.com/document/d/1bT5nEUnzqD-D0QiIHyUI03bRCu9JsikU/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [Mounting the Translators to the Adapters](https://docs.google.com/document/d/17SgCiqV7FJT-bWZ-rdnVYnGQOwL8koe7/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [Low-Pressure Mass Flow Controller Details](https://docs.google.com/document/d/17Vp_UqtXgYiOiCEnxcTw37DxpVW29zIr/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [High Pressure Flow Slides](https://docs.google.com/presentation/d/1mn1r4TA6SOQabsiBrDhMjBT2Agk5A4_3/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
+- [High Pressure Flow SOP](https://docs.google.com/document/d/1uwVXa9QPBHLk10MpUEUmxi0FUDCVnDda/edit?usp=share_link&ouid=113393530670482605273&rtpof=true&sd=true)
