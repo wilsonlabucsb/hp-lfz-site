@@ -41,15 +41,11 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../components.md">Components of the laser furnaces</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Sample preparation</a>
+                <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Sample Preparation</a>
                 </li>
               </ul>
               <ul class="current">
@@ -79,43 +75,45 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#screen-recorder">Screen Recorder</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#typical-desktop-arrangement">Typical Desktop Arrangement</a>
+    </li>
     </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../lasercontrol/">Laser control</a>
+                <li class="toctree-l1"><a class="reference internal" href="../lasercontrol/">Laser Control</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../translatorcontrol/">Translator control</a>
+                <li class="toctree-l1"><a class="reference internal" href="../translatorcontrol/">Translator Control</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Sample mounting and alignment</a>
+                <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Sample Mounting and Alignment</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../shroud/">Shroud assembly</a>
+                <li class="toctree-l1"><a class="reference internal" href="../shroud/">Shroud Assembly</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the chamber</a>
+                <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the Chamber</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../gascontrol/">Pressurizing the chamber</a>
+                <li class="toctree-l1"><a class="reference internal" href="../gascontrol/">Pressurizing the Chamber</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../growth.md">Beginning a growth</a>
+                <li class="toctree-l1"><a class="" href="../growth.md">Beginning a Growth</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../endgrowth.md">Ending a growth</a>
+                <li class="toctree-l1"><a class="" href="../endgrowth.md">Ending a Growth</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../postgrowth.md">Opening and cleaning the chamber</a>
+                <li class="toctree-l1"><a class="" href="../postgrowth.md">Opening and Cleaning the Chamber</a>
                 </li>
               </ul>
               <ul>
@@ -145,24 +143,125 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="equipment-setup">Equipment Setup</h1>
+                <h1 id="setting-up-the-laser-furnace-lokii">Setting up the laser furnace (LOKII)</h1>
 <h2 id="computers">Computers</h2>
+<p>LOKII is controlled by two PCs. <strong><em>Computer 1</em></strong> is mainly used for imaging, and <strong><em>Computer 2</em></strong> is mainly used for controlling the lasers. These computers should usually be left on, and require occasional restarts. Both are remotely accessible via Google Remote Desktop on the wilsonlabucsb Google account.</p>
 <h2 id="lasers">Lasers</h2>
+<p>The seven laser units live in the server rack next to the furnace. In their "off" state, the key on the front of each unit is vertical. </p>
+<ul>
+<li>Turn each unit on by turning each of the seven keys clockwise. </li>
+</ul>
+<p>Lasers are numbered 1-7, with numbers that correspond to each of the windows on the furnace chamber.</p>
 <h3 id="laser-controller-software">Laser Controller Software</h3>
+<p>Each laser unit has a touchscreen that allows for full control of the laser, though we rarely use this feature and mainly control the lasers from <strong><em>Computer 2</em></strong> using a custom Laser Controller Software built in LabVIEW. </p>
+<ul>
+<li>Start the software by clicking the LOKII logo (green heptagon), labled "LOKII Laser Controller Project".</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The software should prompt for the creation of a logfile. Otherwise, the program is not communicating correctly with the lasers and must be restarted. When doing preparation steps, feel free to save a "dummy" logfile, usually called "test.txt".</p>
+</div>
 <h2 id="translators">Translators</h2>
+<p>The translator control unit is located on the server rack, above the seven laser units. The translators are then controlled using a touchscreen monitor located to the right of Computer 2.</p>
+<ul>
+<li>Turn the translator unit on by flipping the red switch on the top right of the translator unit. The touchscreen monitor on the computer desk should begin turning on - if not, ensure that the monitor itself is powered on.</li>
+</ul>
 <h2 id="pyrometer">Pyrometer</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Pyrometer">pyrometer</a> is a remote-sensing thermometer that measures the temperature of the molten zone on the basis of its thermal radiation spectrum. The pyrometer is controlled via software on <strong><em>Computer 1</em></strong> called "DataTemp MultiDrop". The pyrometer is located on <strong><em>Window 4</em></strong>.</p>
+<ul>
+<li>Open <em>DataTemp MultiDrop</em> software.</li>
+<li>Open an "Application Configuration", which loads the correct ethernet configuration as well as the previously used arrangement of data readout windows and data graphs used on the desktop.</li>
+<li>The temperature reading can be performed using 1-color or 2-color modes:</li>
+</ul>
+<p><strong><em>Monochrome models (1-color) for standard temperature measurement applications</em></strong></p>
+<p>The 1-color mode is best for measuring the temperature of targets in areas where no sighting obstructions, either 
+solid or gaseous, exist. Such 1-color mode is also best where the target completely fills the measurement spot.</p>
+<p><strong><em>Ratio models (2-color) for specific temperature measurement applications</em></strong></p>
+<p>Ratio pyrometers determine the object temperature by the ratio of two separate and overlapping infrared bands. 
+The 2-color mode is best for measuring the temperature of targets that are partially obscured, either intermittently 
+or permanently by other objects, openings, screens, or viewing windows that reduce energy, and by dirt, smoke, 
+or steam in the atmosphere. The 2-color mode can also be used on targets that do not completely fill the 
+measurement spot, provided the background is much cooler than the target. Ratio pyrometers can measure and 
+determine the object temperature in either one of both modes (1-color / 2-color), in which always 2 infrared 
+detectors are active.</p>
+<p>See the <a href="https://assets.flukeprocessinstruments.com/FindIt/9250802_ENG_E_W.pdf">manual from Fluke Process Instruments</a> for more details.</p>
 <h2 id="camera">Camera</h2>
+<p>The camera is controlled by software on <strong><em>Computer 1</em></strong> called "Pylon Viewer".</p>
+<ul>
+<li>Open "Pylon Viewer"</li>
+<li>Open Window &gt; Devices &gt; Baseler acA1300.</li>
+<li>
+<p>Click the "Continuous Shot" button to enable video feed. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The camera image is significantly darker than the pyrometer image when the furnace is not actively running.</p>
+</div>
+</li>
+<li>
+<p>Open Window &gt; Features - All &gt; Acquisition Controls &gt; Exposure Time. Use large values (100,000 ms) for setup and lower values (1,000 - 10,000 ms) during growth. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The frame rate will suffer greatly at high exposure times. It is recommended to use no higher than 100,000 ms, else the image will be "choppy". If the frame rate drops to 0 frames per second (fps), simply press "Stop" and "Continuous Shot" to restart video acquisition.</p>
+</div>
+</li>
+</ul>
 <h2 id="mass-flow-controller">Mass Flow Controller</h2>
+<p>The mass flow controller is controlled by two different programs on <strong><em>Computer 2</em></strong>, called <strong>FlowDDE</strong> and <strong>FlowPlot</strong>. </p>
+<ul>
+<li>Open FlowDDE and click Communication &gt; Open communication.</li>
+</ul>
+<p><img alt="flowdde" src="../flowdde.png" /></p>
+<ul>
+<li>Open FlowPlot and click "Start".</li>
+</ul>
+<p><img alt="flowplot_started" src="../flowplot_started.png" /></p>
+<ul>
+<li>Use the "Select setpoint (%)" menu to set a flowrate. 100% corresponds to 10 standard liters per minute (SLM) of Ar flow. For other gases, there is a conversion factor <a href="https://www.fluidat.com/default.asp">calculator available on the Bronkhorst website</a>.</li>
+</ul>
 <h2 id="thermocouples">Thermocouples</h2>
+<p>The thermocouples are read using a thermocouple reader box which is connected to <strong><em>Computer 2</em></strong> via USB connection.</p>
+<ul>
+<li>Open DP1001AM and click Setting &gt; Port and set to COM6 (subject to change).</li>
+<li>Click "Connect" and all three thermocouples should provide a reading.</li>
+</ul>
+<p>Each reading corresponds to a region of the chamber as follows:</p>
+<ul>
+<li>Channel 1: Window 6</li>
+<li>Channel 2: Window 3</li>
+<li>Channel 3: Window 1</li>
+</ul>
+<p>These ports are all at different distances from the central chamber bore as specified in the <a href="https://drive.google.com/file/d/1bF2z0rJOU35PYmfswIMlTUs2nmuFOmcg/view?usp=share_link">chamber drawings</a>.</p>
 <h2 id="pressure-gauge-viewer">Pressure Gauge Viewer</h2>
+<p>The pressure gauge at the outlet is monitored by a Logitech Webcam connected to <strong><em>Computer 2</em></strong>.</p>
+<ul>
+<li>Open Logitech Software to view the camera.</li>
+<li>Physically adjust the webcam to capture at least the range 0 psi to 10,000 psi.</li>
+</ul>
 <h2 id="growth-logs">Growth Logs</h2>
+<ul>
+<li>Open the <a href="https://drive.google.com/drive/folders/1A3_43n8ItInI4Z7pf4uCt52mfkHWRzl-?usp=sharing">Growth Logs</a> folder on Google Drive.</li>
+<li>Copy an existing log and maintain the naming scheme to keep files organized.</li>
+<li>See existing logs for examples - keep a good record of growth details. Images can also be included.</li>
+</ul>
 <h2 id="screen-recorder">Screen Recorder</h2>
+<p>Both computers are equipped with <a href="https://obsproject.com/">OBS Studio</a>, a free screen recording software.</p>
+<ul>
+<li>Open OBS Studio, and ensure that it is focused on the monitor you wish to record.</li>
+<li>Press "Start Recording".</li>
+</ul>
+<h2 id="typical-desktop-arrangement">Typical Desktop Arrangement</h2>
+<p><strong><em>Computer 1 Left Desktop</em></strong>
+<img alt="pc1_desktop1" src="../pc1_desktop1.png" /></p>
+<p><strong><em>Computer 1 Right Desktop</em></strong>
+<img alt="pc1_desktop2" src="../pc1_desktop2.png" /></p>
+<p><strong><em>Computer 2 Desktop</em></strong>
+<img alt="pc2_desktop" src="../pc2_desktop.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../sampleprep/" class="btn btn-neutral float-left" title="Sample preparation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../lasercontrol/" class="btn btn-neutral float-right" title="Laser control">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../sampleprep/" class="btn btn-neutral float-left" title="Sample Preparation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lasercontrol/" class="btn btn-neutral float-right" title="Laser Control">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -195,6 +294,9 @@
     <script>var base_url = '..';</script>
     <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
