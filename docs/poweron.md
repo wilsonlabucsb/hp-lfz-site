@@ -63,6 +63,7 @@ The camera is controlled by software on ***Computer 1*** called "Pylon Viewer".
 		The frame rate will suffer greatly at high exposure times. It is recommended to use no higher than 100,000 ms, else the image will be "choppy". If the frame rate drops to 0 frames per second (fps), simply press "Stop" and "Continuous Shot" to restart video acquisition.
 
 ## Mass Flow Controller
+
 The mass flow controller is controlled by two different programs on ***Computer 2***, called **FlowDDE** and **FlowPlot**. 
 
 - Open FlowDDE and click Communication > Open communication.
@@ -73,14 +74,50 @@ The mass flow controller is controlled by two different programs on ***Computer 
 
 ![flowplot_started](flowplot_started.png)
 
-- Use the "Select setpoint (%)" menu to set a flowrate. 100% corresponds to 10 standard liters per minute (SLM) of Ar flow. For other gases, there is a conversion factor available on the Bronkhorst website.
-
-
+- Use the "Select setpoint (%)" menu to set a flowrate. 100% corresponds to 10 standard liters per minute (SLM) of Ar flow. For other gases, there is a conversion factor [calculator available on the Bronkhorst website](https://www.fluidat.com/default.asp).
 
 ## Thermocouples
 
+The thermocouples are read using a thermocouple reader box which is connected to ***Computer 2*** via USB connection.
+
+- Open DP1001AM and click Setting > Port and set to COM6 (subject to change).
+- Click "Connect" and all three thermocouples should provide a reading.
+
+Each reading corresponds to a region of the chamber as follows:
+
+- Channel 1: Window 6
+- Channel 2: Window 3
+- Channel 3: Window 1
+
+These ports are all at different distances from the central chamber bore as specified in the [chamber drawings](https://drive.google.com/file/d/1bF2z0rJOU35PYmfswIMlTUs2nmuFOmcg/view?usp=share_link).
+
 ## Pressure Gauge Viewer
+
+The pressure gauge at the outlet is monitored by a Logitech Webcam connected to ***Computer 2***.
+
+- Open Logitech Software to view the camera.
+- Physically adjust the webcam to capture at least the range 0 psi to 10,000 psi.
 
 ## Growth Logs
 
+- Open the [Growth Logs](https://drive.google.com/drive/folders/1A3_43n8ItInI4Z7pf4uCt52mfkHWRzl-?usp=sharing) folder on Google Drive.
+- Copy an existing log and maintain the naming scheme to keep files organized.
+- See existing logs for examples - keep a good record of growth details. Images can also be included.
+
 ## Screen Recorder
+
+Both computers are equipped with [OBS Studio](https://obsproject.com/), a free screen recording software.
+
+- Open OBS Studio, and ensure that it is focused on the monitor you wish to record.
+- Press "Start Recording".
+
+## Typical Desktop Arrangement
+
+***Computer 1 Left Desktop***
+![pc1_desktop1](pc1_desktop1.png)
+
+***Computer 1 Right Desktop***
+![pc1_desktop2](pc1_desktop2.png)
+
+***Computer 2 Desktop***
+![pc2_desktop](pc2_desktop.png)

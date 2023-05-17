@@ -2,17 +2,17 @@ site_name: High-Pressure Laser Floating Zone Lab
 site_url: https://example.com/
 nav:
     - Welcome: index.md
-    - Sample preparation: sampleprep.md
+    - Sample Preparation: sampleprep.md
     - Equipment Setup: poweron.md
-    - Laser control: lasercontrol.md
-    - Translator control: translatorcontrol.md
-    - Sample mounting and alignment: samplemounting.md
-    - Shroud assembly: shroud.md
-    - Sealing the chamber: sealing.md
-    - Pressurizing the chamber: gascontrol.md
-    - Beginning a growth: growth.md
-    - Ending a growth: endgrowth.md
-    - Opening and cleaning the chamber: postgrowth.md
+    - Laser Control: lasercontrol.md
+    - Translator Control: translatorcontrol.md
+    - Sample Mounting and Alignment: samplemounting.md
+    - Shroud Assembly: shroud.md
+    - Sealing the Chamber: sealing.md
+    - Pressurizing the Chamber: gascontrol.md
+    - Beginning a Growth: growth.md
+    - Ending a Growth: endgrowth.md
+    - Opening and Cleaning the Chamber: postgrowth.md
     - Maintenance: maintenance.md
 
 theme: readthedocs
