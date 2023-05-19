@@ -57,6 +57,16 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#laser-components">Laser components</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#laser-optics">Laser optics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#anti-reflection-coatings">Anti-reflection coatings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#focusing-optics">Focusing optics</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#in-plane-viewing-optics">In-plane viewing optics</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#laser-safety">Laser safety</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#using-the-laser-controller-software">Using the Laser Controller Software</a>
@@ -82,6 +92,8 @@
         </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#understanding-the-outputs-logfile">Understanding the outputs / logfile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-the-laser-unit-touchscreens">Using the Laser Unit Touchscreens</a>
     </li>
         </ul>
     </li>
@@ -162,6 +174,11 @@
 </li>
 </ul>
 </div>
+<h2 id="laser-optics">Laser optics</h2>
+<h3 id="anti-reflection-coatings">Anti-reflection coatings</h3>
+<h3 id="focusing-optics">Focusing optics</h3>
+<h3 id="in-plane-viewing-optics">In-plane viewing optics</h3>
+<hr />
 <h2 id="laser-safety">Laser safety</h2>
 <p>There are several key components of laser safety in the Laser Lab.</p>
 <ul>
@@ -175,6 +192,7 @@
 <p>Similarly, whenever the laser units are armed, occupants of the lab should be wearing laser safety goggles with optical density (OD) 6+ at 1070 nm. These are not strictly required when the laser curtains are closed but should certainly be worn at all times when the curtain is open and the lasers are armed (regardless of whether emission is on).</p>
 </li>
 </ul>
+<hr />
 <h2 id="using-the-laser-controller-software">Using the Laser Controller Software</h2>
 <h3 id="starting-the-software">Starting the software</h3>
 <ol>
@@ -188,18 +206,26 @@
 <p><em>Example filename:</em> <code>"20230515_Log100_Sr2IrO4_growth50.txt"</code></p>
 </li>
 </ol>
+<hr />
 <h3 id="basic-labview-working-principles">Basic LabVIEW working principles</h3>
 <p>The LabVIEW software is built to run in a continunous <code>while</code> loop, which only stops when the large red <img alt="labviewstop" src="../labviewstop.png" width="50" /> button is pressed. The current step is indicated by the <code>Step</code> text box indicator on the top of the Laser Controller.</p>
 <p>While understanding the function of each step in the while loop is not important for the general user, the details can be found in a later section. The important thing to understand is that <strong><em>your actions in LabVIEW are not put into effect until the loop has completed the next full cycle</em></strong>. </p>
 <p>This results is some <strong><em>delays</em></strong> between, for example, when you click the <code>Aiming Beam</code> button and when the aiming beam actually turns on.</p>
+<hr />
 <h3 id="enabling-communication-with-the-lasers">Enabling communication with the lasers</h3>
 <p>On the left hand side of the Laser Controller, there are 7 buttons enabling communication with each of the laser units, shown here:</p>
 <p><img alt="lasercommunication" src="../lasercommunication.png" /></p>
 <p>In the picture above, all lasers will receive commands as indicated by the illuminated green light on each button. When sending commands to a select few lasers, simply disable the corresponding button in this section.</p>
+<hr />
 <h3 id="using-the-aiming-beam-visible-red-light">Using the aiming beam (visible red light)</h3>
 <p>For sample alignment, beam alignment, and beam focusing, the lasers offer a visible red laser light source called the "aiming beam". This radiation is visible, and is relatively low power. While delivering lower power than the infrared light, direct eye contact with the aiming beam can still cause injury.</p>
-<p>To enable the aiming beam, click the <code>Aiming Beam</code> button on the Laser Controller.</p>
+<p>To enable the aiming beam, enable communication with any of lasers 2, 3, 5, 6 or 7 and click the <code>Aiming Beam</code> button on the Laser Controller.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Avoid using the aiming beam on lasers 1 and 4 - the semi-transparent mirrors in front of the camera and pyrometer are transparent to this red light and the aiming beam will obstruct viewing on windows 1 and 4.</p>
+</div>
 <p><img alt="aimingbeambutton" src="../aimingbeambutton.png" /></p>
+<hr />
 <h3 id="using-the-infrared-beam-1070-nm-light">Using the infrared beam (1070 nm light)</h3>
 <p>For delivering heating power to a sample, use the infrared beam, which has a wavelength of 1070 nm and a maximum power output of 200 W. There are several steps to using the infrared beam.</p>
 <ol>
@@ -227,6 +253,7 @@
 <p class="admonition-title">Warning</p>
 <p>This only sets the power for the lasers for which <code>Laser Communication</code> is enabled. The power setpoint for the other lasers will remain unmodified in this case.</p>
 </div>
+<hr />
 <h4 id="automatic-power-ramping">Automatic power ramping</h4>
 <p><img alt="ramppower" src="../ramppower.png" /></p>
 <ol>
@@ -253,25 +280,21 @@
 <p>Once the setpoint reaches the target power, the ramp will stop automatically.</p>
 </li>
 </ol>
+<hr />
 <h4 id="laser-pulsing">Laser pulsing</h4>
-<p>The laser units are equipped with an internal pulsing control which allows the beam to pulse at a chosen frequency with chosen pulse width. These are set using the <strong>Set Pulsing</strong> tab.</p>
+<p>The laser units are equipped with an internal pulsing control which allows the beam to pulse at a chosen frequency with chosen pulse width. These are set using the <strong>Set Pulsing</strong> tab. </p>
+<p>In order for pulsing mode to actually emit light, a constant DC signal must be applied to terminals on the back of each laser unit. To accomplish this, a simple DC power supply rests near the top of the server rack. To enable, simply turn on the power switch on the left hand side of the DC Power Supply unit, and then send the DC signal by pressing the blue <code>Output On/Off</code> button on the front panel of the unit.</p>
+<p><img alt="" src="../powersupply.png" /></p>
+<p>Set a desired pulse width in ms by entering a value in the <code>Pulse Width (ms)</code> field and click <code>Set Pulse Width</code>. Click <code>Pulsing on/off</code> to enable the pulsing mode on the lasers - the <code>Pulsing enabled:</code> indicators near the lower left of the Laser Controller should glow orange for each laser (1 through 7) which has pulsing enabled.</p>
 <p><img alt="" src="../pulsingcontrol.png" /></p>
-<p>Set a desired pulse width in ms by entering a value in the <code>Pulse Width (ms)</code> field and click <code>Set Pulse Width</code>.</p>
 <p>The default pulse frequency or <strong>Pulse Repetition Rate (Hz)</strong> as labeled in the Laser Controller software is 100 Hz - meaning that 100 pulses occur per second, equivalent to one pulse every 10 ms.</p>
 <p>The <a href="https://en.wikipedia.org/wiki/Duty_cycle">duty cycle</a> is then controlled exclusively by the pulse width, meaning that a pulse with of 5 ms corresponds to a duty cycle = 50% as shown below. In the default configuration, the duty cycle can be calculated using the forumla <span class="arithmatex">\(\rm{Duty} = \rm{Width}/10~\rm{ms} \times 100\%\)</span>.</p>
 <p><img alt="" src="../dutycycle.png" width="200" /></p>
-<p>The pulsing mode indicators can be found towards the left side of the Laser Controller. These indicators glow orange when pulsing is enabled.</p>
 <h3 id="understanding-the-outputs-logfile">Understanding the outputs / logfile</h3>
-<ul>
-<li>Setting an output power</li>
-<li>Automatic power ramping</li>
-<li>
-<p>Using the laser touchscreens</p>
-</li>
-<li>
-<p>Laser Software Loop details</p>
-</li>
-</ul>
+<hr />
+<h3 id="using-the-laser-unit-touchscreens">Using the Laser Unit Touchscreens</h3>
+<p>The touchscreen on the front of the laser units should be used sparingly, only for basic or absolutely necessary tasks such as turning on the aiming beam, enabling/disabling pulsing ("Gate Mode"), and for urgent needs to turn off emission / emergency shutoff.</p>
+<p><img alt="" src="../lasertouchscreen.png" /></p>
               
             </div>
           </div><footer>
