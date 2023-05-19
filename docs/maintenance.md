@@ -7,6 +7,7 @@ These operations are more advanced than is typical for the average user, and gen
 ## Translators
 ### Aligning the adapter pieces
 ### Aligning the sealing surface
+### Issues with translation speed
 ## Chamber
 ### Installing new windows
 ### Preparing a new chamber
@@ -30,3 +31,11 @@ These operations are more advanced than is typical for the average user, and gen
 ## Updating this website
 ### Mkdocs
 ### GitHub
+## Hardware Communications
+### Connecting the Laser Units to the Laser Controller Computer
+#### Cable diagram
+#### LAN / IP Configuration
+### Connecting the thermocouple reader
+### Connecting the pyrometer
+### Connecting the camera
+### Connecting to the MFC

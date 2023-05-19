@@ -59,13 +59,39 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Translator Control</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#translator-design">Translator Design</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#raising-and-lowering-the-translator-housings">Raising and lowering the translator housings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#counterweight-system">Counterweight system</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#where-and-where-not-to-grab">Where and where not to grab</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#using-the-translator-touchscreen">Using the translator touchscreen</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#sample-rotation">Sample rotation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rpm-limits">RPM limits</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#sample-translation">Sample translation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fast-manual-translation">Fast Manual Translation</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#raising-and-lowering-the-translator-housings">Raising and lowering the translator housings</a>
+    <li class="toctree-l3"><a class="reference internal" href="#slow-automatic-translation">Slow Automatic Translation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-considerations">Other considerations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#changing-pressure-too-quickly">Changing pressure too quickly</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mechanical-failure-points">Mechanical failure points</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -125,28 +151,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="translator-control">Translator control</h1>
-<h2 id="using-the-translator-touchscreen">Using the translator touchscreen</h2>
-<h2 id="sample-rotation">Sample rotation</h2>
-<ul>
-<li>Rpm limits</li>
-<li>Recommended rpm changes</li>
-</ul>
-<h2 id="sample-translation">Sample translation</h2>
-<ul>
-<li>Translation limits</li>
-<li>Other considerations<ul>
-<li>Changing pressure too quickly</li>
-<li>Failure points</li>
-</ul>
-</li>
-</ul>
+                <h1 id="translator-control">Translator Control</h1>
+<h2 id="translator-design">Translator Design</h2>
+<p><img alt="" src="../translatorlabeled.png" /></p>
+<hr />
 <h2 id="raising-and-lowering-the-translator-housings">Raising and lowering the translator housings</h2>
-<ul>
-<li>Where and where not to grab</li>
-<li>Counterweight system</li>
-<li>Don't slam them into the chamber</li>
-</ul>
+<h3 id="counterweight-system">Counterweight system</h3>
+<p>Each translator is quite heavy, and sliding it up and down on the furnace framing is facilitated by iron counterweights which attach the translators via a cable-pulley system. Each counterweight is equipped with a so-called "handbrake" which can be tightened to lock its position.</p>
+<h3 id="where-and-where-not-to-grab">Where and where not to grab</h3>
+<p><img alt="" src="../wheretotouch.png" width="400" /></p>
+<hr />
+<h2 id="using-the-translator-touchscreen">Using the translator touchscreen</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There are <strong>several important considerations</strong> when using the translators:</p>
+<ol>
+<li>
+<p>Never allow the translators to reach their maximum translation limits. There are limit switches to automatically stop translation once these limits are reached, but they are not guaranteed to work and failure here can cause costly damage to the translator units.</p>
+</li>
+<li>
+<p>The translators should never translate without rotation enabled.</p>
+</li>
+<li>
+<p>Always MODIFY the automatic translation speed before enabling slow automatic translation - there is a software error that can lead to accidental fast translation if the speed has remained unmodified for an extended period of time. Specifically, we suspect that this occurs only after the <strong>2-finger automatic fast gear mode</strong> (see below) has been used and the automatic translation speed has not been changed since this mode.</p>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../translatortouchscreen.png" /></p>
+<p>The translators are controlled entirely via the touchscreen monitor next to the computers. Each of the buttons is used by tapping once, with the exception of the <code>Fast Gear</code> fast translation buttons which must be held down constantly.</p>
+<hr />
+<h2 id="sample-rotation">Sample rotation</h2>
+<p>To enable rotation, simply tap the CW or CCW buttons and the shaft will begin to rotate. The default speed is 10 revolutions per minute, which can be adjusted by adding or subtracting values using the +/- buttons under the rpm readout. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong><em>It is recommended to avoid using the +/- 10 rpm buttons</em></strong>, as these can cause decoupling of the magnet pack and/or failure of the rotation motor.</p>
+</div>
+<h3 id="rpm-limits">RPM limits</h3>
+<p>There are two generations of translator units - the first generation has slightly thinner diameter lead screw and keyed shaft. These older models are thought to have an upper limit of 15 rpm, above which the rotation motor may not operate continuously. The second generation, having thicker lead screw and keyed shaft, has been demonstrated to work at speeds up to 30 rpm.</p>
+<hr />
+<h2 id="sample-translation">Sample translation</h2>
+<h3 id="fast-manual-translation">Fast Manual Translation</h3>
+<p>To use fast manual translation, with rotation enabled, simply long-press the <code>Fast Gear</code> up/down arrows and the shaft will translate as long as the button is held down.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>2-finger automatic fast gear mode</strong></p>
+<p>To long-press the <code>Fast Gear</code> buttons without needing to keep your finger on the screen, you may use a 1-finger press on the button followed by adding a second finger nearby on the screen, followed by releasing both fingers at the same time. Be cautious to not allow the fast gear to take the translator motors to their extreme limits - keep watch of the translators in this mode and tap the button again to disable.</p>
+</div>
+<h3 id="slow-automatic-translation">Slow Automatic Translation</h3>
+<p>To use slow automatic translation, set a translation speed in mm/hr using the +/- buttons under the speed readout. <em>See warning at the top of this page about errors that can cause the software to accidentally ignore this speed and "fast move".</em></p>
+<p>Then, with rotation enabled, tap the <code>Automatic</code> up/down buttons to begin translation.</p>
+<h2 id="other-considerations">Other considerations</h2>
+<h3 id="changing-pressure-too-quickly">Changing pressure too quickly</h3>
+<p>Changing the pressure too quickly can violently force the translator shaft in or out of the pressure tube, decoupling it from the magnet pack and potentially damaging equipment / samples. Always pressurizing and depressurize slowly to avoid this.</p>
+<h3 id="mechanical-failure-points">Mechanical failure points</h3>
+<p>The most catastrophic failure has been mechanical failure of the attachment between the shaft and the inner magnet back at its base.</p>
+<p><img alt="" src="../brokenshaft.png" width="500" /></p>
               
             </div>
           </div><footer>
