@@ -5,6 +5,7 @@ nav:
     - Furnace Design: about.md
     - Sample Preparation: sampleprep.md
     - Equipment Setup: poweron.md
+    - Imaging Control: imaging.md
     - Laser Control: lasercontrol.md
     - Translator Control: translatorcontrol.md
     - Sample Mounting and Alignment: samplemounting.md
