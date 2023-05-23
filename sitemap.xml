@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/imaging/</loc>
+         <lastmod>2023-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/lasercontrol/</loc>
          <lastmod>2023-05-23</lastmod>
          <changefreq>daily</changefreq>
