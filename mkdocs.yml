@@ -2,12 +2,12 @@ site_name: High-Pressure Laser Floating Zone Lab
 site_url: https://example.com/
 nav:
     - Welcome: index.md
+    - Furnace Design: about.md
     - Sample Preparation: sampleprep.md
     - Equipment Setup: poweron.md
     - Laser Control: lasercontrol.md
     - Translator Control: translatorcontrol.md
     - Sample Mounting and Alignment: samplemounting.md
-    - Shroud Assembly: shroud.md
     - Sealing the Chamber: sealing.md
     - Pressurizing the Chamber: gascontrol.md
     - Beginning a Growth: growth.md

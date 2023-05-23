@@ -35,3 +35,5 @@ Assess and correct the precession of the seed rod - this can be done in any way 
 ## Feed rod
 
 The feed rod is mounted in essentially the same manner as the seed rod. However, the standard for minimizing precession using the mounting set screws is not as critical here, as minor adjustments can be made by manipulating the bend of the wire.
+
+**Measure the length of the feed rod** and record this length in the Growth Log (Google Sheets) before continuing. End the growth ~7 mm before the beam reaches the sample holder.
