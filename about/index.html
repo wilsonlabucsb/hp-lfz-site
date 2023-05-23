@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/about/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Welcome to MkDocs - High-Pressure Laser Floating Zone Lab</title>
+    <title>Furnace Design - High-Pressure Laser Floating Zone Lab</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Welcome to MkDocs";
+        var mkdocs_page_name = "Furnace Design";
         var mkdocs_page_input_path = "about.md";
         var mkdocs_page_url = "/about/";
       </script>
@@ -44,6 +44,20 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
                 </li>
               </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Furnace Design</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#chamber">Chamber</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pressure-sealing">Pressure sealing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#water-cooling">Water cooling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#structural-frame">Structural Frame</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Sample Preparation</a>
                 </li>
@@ -62,10 +76,6 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Sample Mounting and Alignment</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../shroud/">Shroud Assembly</a>
                 </li>
               </ul>
               <ul>
@@ -106,7 +116,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Welcome to MkDocs</li>
+      <li>Furnace Design</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -115,24 +125,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+                <h1 id="furnace-design">Furnace Design</h1>
+<h2 id="chamber">Chamber</h2>
+<p><img alt="" src="../chamberlabeled.png" /></p>
+<p>The main structural component of the high-pressure laser floating zone setup, designed by Michael Aling, is the inconel pressure chamber. It is made of nickel alloy 718 and was machined in the UCSB Physics Machine Shop by Andy Segale. Inconel 718 is an extremely strong and corrosion resistant alloy employed in the aerospace industry to design jet engine components which have to sustain the most demanding environments, including extremely high temperatures, pressures and oxidizing environments. It can be machined in its softened state and then precipitation hardened. After machining was completed at UCSB, the chamber was precipitation hardened by Solar Atmospheres of California (www.solaratm.com) who have the required equipment as well as extensive knowledge on heat treatment of specialized metal alloys.</p>
+<p>The chamber is equipped with seven ¾" NPT ports. These are for the windows which allow for the laser beam to penetrate into the chamber, and can be used to image the molten sample using semi-transparent mirrors which reflect out-of-plane lasers into the chamber.</p>
+<p>Threaded into these window ports are custom sight glasses which fetaure a replaceable, anti-reflection coated window which is held in place by an O-ring and a retaining ring of CuBe alloy UNSC17200, chosen for its corrosion resistance. The sight glass housings are made from Inconel 718.</p>
+<p><img alt="" src="../windowplug.png" width="400" /></p>
+<h2 id="pressure-sealing">Pressure sealing</h2>
+<p>The chamber can be attached to the drives via adapting pieces, also designed by Michael Aling and machined out of the Inconel 718 alloy. The reason for these adapting pieces is the following. The drives are sealed to the processing chamber via a coned high pressure metal-to-metal seal. This is machined directly into the end of the drive ends and cannot easily be replaced. Since a seal will have to be broken each time the sample is mounted / unmounted, a replaceable seal is paramount. We therefore designed an adapting piece which is permanently sealed to the drives via the coned seals. The adaptors in turn are sealed to the chamber via replaceable metal gasket seals, detailed in <a href="/sealing">Sealing the Chamber</a>.</p>
+<h2 id="water-cooling">Water cooling</h2>
+<p>The chamber is water-cooled – this is essential since otherwise it would get extremely hot which would severely compromise its structural integrity and resistance to oxidation, and high temperatures have been shown to melt the O-rings in the window housings and cause damage to the sapphire windows. It is therefore also equipped with several thermocouple ports in order to monitor the chamber temperature during growth runs.</p>
+<h2 id="structural-frame">Structural Frame</h2>
+<p>The chamber is directly attached to the linear guide shafts via a set of brackets. These were custom machined by the engineering machine shop according to designs by Michael Aling.</p>
+<p>An important note is regarding the general build of the setup. All components are attached directly or indirectly to the linear guide shafts which run the length of the instrument. The main attachment point is the chamber itself. Via its brackets it is attached to the guide shafts using face-mounted shaft collars (<a href="https://www.mcmaster.com/catalog/129/1438/9677T2">McMaster</a>) which are tightened to the guide shafts. All other parts are now attached to the chamber itself. The reason for this design decision was to help with alignment - by having all other parts floating they have the required tolerance to self-align with the chamber.</p>
+<p><img alt="" src="../crossbeams.png" /></p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sampleprep/" class="btn btn-neutral float-right" title="Sample Preparation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -154,6 +168,10 @@ docs/
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sampleprep/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
