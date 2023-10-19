@@ -36,6 +36,8 @@ The volatilization of material during growth cannot be completely mitigated by t
 
 1. Place a collar and washer on the bottom translator shaft, about 5 mm below the notch meant to hold the seed rod. This washer is meant to catch falling debris.
 
+    ![](collar.jpg){width="300"}
+
 1. Mount the seed rod holder using the bottom set screw.
 
 1. **Lower shroud**: The lower shroud piece can be distinguished from the upper shroud piece because it has a ***sloped interior groove*** near the bottom end that mates with the top lip of the shroud cup. It is also slightly shorter than the upper shroud. Carefully place the lower shroud over the seed rod and down into the adapter to mate with the shroud cup. (It may be necessary to lower the seed rod in order to get the shroud over it.) 
