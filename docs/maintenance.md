@@ -10,6 +10,8 @@ These operations are more advanced than is typical for the average user, and gen
 ### Issues with translation speed
 ## Chamber
 ### Installing new windows
+### Melting of O-rings
+![](meltedoring.jpg)
 ### Preparing a new chamber
 ### Deep cleaning the chamber
 ### Leak checking the chamber

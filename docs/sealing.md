@@ -24,7 +24,11 @@ The volatilization of material during growth cannot be completely mitigated by t
 
 ## Assembling the shroud and loading the sample
 
-1. Clean the top and bottom sealing surfaces using IPA/EtOH and a Kimwipe until the Kimwipe appears free of any residue, and place Destec sealing rings on the top face of the chamber and the top face of the lower translator.
+1. Clean the top and bottom sealing surfaces using IPA/EtOH and a Kimwipe until the Kimwipe appears free of any residue.
+
+1. Use an air duster to blow off the Kimwipe fibers off the sealing surface.
+
+1. Gently place Destec sealing rings on the top face of the chamber and the top face of the lower translator.
 
 1. **Shroud cup**: The shroud cup sits at the very bottom of the lower inconel adapter, and is meant to prevent material entering into the neck of the pressure tube of the lower translator. It is also useful for catching bits of crystals that have fallen down after growth. The cup has a hole in the center to allow the translator shaft to pass through it, and because this hole has a relatively large diameter a stainless steel collar is usually placed around the translator shaft just on top of the shroud cup to limit powder falling into this gap.
 
@@ -35,7 +39,7 @@ The volatilization of material during growth cannot be completely mitigated by t
 1. Mount the seed rod holder using the bottom set screw.
 
 1. **Lower shroud**: The lower shroud piece can be distinguished from the upper shroud piece because it has a ***sloped interior groove*** near the bottom end that mates with the top lip of the shroud cup. It is also slightly shorter than the upper shroud. Carefully place the lower shroud over the seed rod and down into the adapter to mate with the shroud cup. (It may be necessary to lower the seed rod in order to get the shroud over it.) 
-
+    ![](lowershroud.jpg){width="300"}
 1. There is a hole on the face of the shroud which should align with the gas outlet port on the chamber. Rotate the shroud until the hole is aligned.
 
 1. **Cylindrical glass window**: The cylindrical glass window for LOKII is simply a glass tube that has been diced to the correct height. There is no anti-reflective coating and thus the windows are relatively inexpensive. These windows get damaged over time, especially when in contact with hot volatile material. 
@@ -45,7 +49,7 @@ The volatilization of material during growth cannot be completely mitigated by t
 
 1. Carefully slide the lower translator housing upward until the inconel adapter is flush with the bottom face of the chamber.
 
-    (IMAGE!)
+    ![](bottomflush.jpg)
 
 1. **Upper shroud**: Similar to the lower shroud, except there is no sloped interior groove on the top end. This shroud piece also has a hole, which is meant to align with the inlet gas port on the chamber. ***Gently*** lower the upper shroud into the top opening of the chamber with the hole aligned, and the shroud will seat gently into the cylindrical glass window.
 
