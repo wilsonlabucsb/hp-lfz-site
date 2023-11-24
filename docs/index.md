@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="headerimage.png" />
+  <img src="img/headerimage.png" />
 </p>
 
 # Welcome to the High-Pressure Laser Floating Zone Lab Documentation!

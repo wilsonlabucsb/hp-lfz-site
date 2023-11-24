@@ -68,11 +68,11 @@ The mass flow controller is controlled by two different programs on ***Computer 
 
 - Open FlowDDE and click Communication > Open communication.
 
-![flowdde](flowdde.png)
+![flowdde](img/flowdde.png)
 
 - Open FlowPlot and click "Start".
 
-![flowplot_started](flowplot_started.png)
+![flowplot_started](img/flowplot_started.png)
 
 - Use the "Select setpoint (%)" menu to set a flowrate. 100% corresponds to 10 standard liters per minute (SLM) of Ar flow. For other gases, there is a conversion factor [calculator available on the Bronkhorst website](https://www.fluidat.com/default.asp).
 
@@ -114,10 +114,10 @@ Both computers are equipped with [OBS Studio](https://obsproject.com/), a free s
 ## Typical Desktop Arrangement
 
 ***Computer 1 Left Desktop***
-![pc1_desktop1](pc1_desktop1.png)
+![pc1_desktop1](img/pc1_desktop1.png)
 
 ***Computer 1 Right Desktop***
-![pc1_desktop2](pc1_desktop2.png)
+![pc1_desktop2](img/pc1_desktop2.png)
 
 ***Computer 2 Desktop***
-![pc2_desktop](pc2_desktop.png)
+![pc2_desktop](img/pc2_desktop.png)

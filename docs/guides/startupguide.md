@@ -7,28 +7,28 @@
 1. Create a new Growth Log in the "[Growth Logs](https://drive.google.com/drive/folders/1A3_43n8ItInI4Z7pf4uCt52mfkHWRzl-?usp=drive_link)" folder in the [LOKII Google Drive](https://drive.google.com/drive/folders/1-5bD7GNJCqUvJMFQOrpgeaQlDUMaeCdf?usp=drive_link).    
 
 1. On the front of each of the seven laser units, turn the key clockwise to the "ON" position.
-    ![laser_unit_front_cartoon.png](../laser_unit_front_cartoon.png){width=400}
+    ![laser_unit_front_cartoon.png](../img/laser_unit_front_cartoon.png){width=400}
 
 1. On the front of the translator control unit, flip the power switch on the top right.
    ![translator_unit_front.png](translator_unit_front.png)
 
 1. On Computer 1, open the camera software, Pylon Viewer ([more info]())
-   ![pylon.png](../pylon.png)
+   ![pylon.png](../img/pylon.png)
 
 1. On Computer 1, open the pyrometer software, DataTemp MultiDrop ([more info]())
-   ![dtmd.png](../dtmd.png)
+   ![dtmd.png](../img/dtmd.png)
 
 1. On Computer 2, open the thermocouple software, DP1001 AM ([more info]())
-   ![tc.png](../tc.png)
+   ![tc.png](../img/tc.png)
 
 1. On Computer 2, open the Laser Controller Software ([more info]())
-   ![laser_software.png](../laser_software.png)
+   ![laser_software.png](../img/laser_software.png)
 
 1. On Computer 2, open the webcam software to monitor the pressure gauge, Logitech Camera Settings ([more info]())
-   ![webcam.png](../webcam.png)
+   ![webcam.png](../img/webcam.png)
 
 1. On Computer 2, open the mass flow controller software, FlowDDE and FlowPlot ([more info]())
-   ![mfc_software.png](../mfc_software.png)
+   ![mfc_software.png](../img/mfc_software.png)
 
 ---
 

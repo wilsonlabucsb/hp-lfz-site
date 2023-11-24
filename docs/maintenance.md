@@ -11,7 +11,7 @@ These operations are more advanced than is typical for the average user, and gen
 ## Chamber
 ### Installing new windows
 ### Melting of O-rings
-![](meltedoring.jpg)
+![](img/meltedoring.jpg)
 ### Preparing a new chamber
 ### Deep cleaning the chamber
 ### Leak checking the chamber

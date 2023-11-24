@@ -40,7 +40,6 @@ nav:
       - Swagelok piping (low-P): info/swagelok.md
       - MaxPro piping (high-P): info/maxpro.md
       - Modifying this site: info/modifysite.md
-
     - Other:
       - Lab Access: access.md
       - Equipment Setup: poweron.md
