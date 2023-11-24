@@ -2,28 +2,52 @@ site_name: High-Pressure Laser Floating Zone Lab
 nav:
     - Home: index.md
     - Guides:
-      - Startup Guide: startupguide.md
-      - Shutdown Guide: shutdownguide.md
+      - Startup Guide: guides/startupguide.md
+      - Shutdown Guide: guides/shutdownguide.md
     - Standard Operating Procedures:
-      - Mounting and aligning sample: samplemounting.md
-      - Making feed and seed rods: sampleprep.md
-      - Using the camera: imaging.md
-      - Using the pyrometer: pyrometer.md
-      - Using the lasers: lasercontrol.md
-      - Using the translators: translatorcontrol.md
-      - Sealing the Chamber: sealing.md
-    - Advanced procedures:
-      - Adjusting the laser optics: optics.md
+      - Making feed and seed rods: sops/sampleprep.md
+      - Mounting and aligning sample: sops/samplemounting.md
+      - Using the lasers: sops/lasercontrol.md
+      - Using the camera: sops/imaging.md
+      - Using the pyrometer: sops/pyrometer.md
+      - Using the thermocouples: sops/thermocouples.md
+      - Using the translators: sops/translatorcontrol.md
+      - Using the mass flow controller: sops/mfc.md
+      - Using the low-pressure gas manifold: sops/lowp.md
+      - Using the high-pressure gas manifold: sops/highp.md
+      - Using the compressor: sops/compressor.md
+      - Sealing the chamber: sops/sealing.md
+      - Beginning a growth: sops/begingrowth.md
+      - Ending a growth: sops/endgrowth.md
+    - Advanced maintenance:
+      - Aligning the laser optics: advanced/alignlasers.md
+      - Changing the laser spot size: advanced/spotsize.md
+      - Opening/sealing the translators: advanced/opentranslator.md
+      - Aligning the sealing surfaces: advanced/alignseals.md
+      - Lubricating the translators: advanced/lubricatetranslators.md.md
+      - Installing new chamber windows: advanced/installchamberwindow.md
+      - Preparing newly machined Inconel 718: advanced/preparenewinconel.md
+      - Deep cleaning the chamber: advanced/deepcleanchamber.md
+      - Leak checking the chamber: advanced/leakcheckchamber.md
+      - Maintaining the chiller: advanced/maintainchiller.md
+      - Installing the cooling lines: advanced/installcoolinglines.md
+      - Replacing the gas bottle: advanced/replacegasbottle.md
+      - Repairing the compressor: advanced/repaircompressor.md
+    - Useful information:
+      - Furnace Design: info/furnacedesign.md
+      - Laser Controller LabVIEW: info/labview.md
+      - Local network configuration: info/localnetwork.md
+      - Swagelok piping (low-P): info/swagelok.md
+      - MaxPro piping (high-P): info/maxpro.md
+      - Modifying this site: info/modifysite.md
+
+    - Other:
+      - Lab Access: access.md
       - Equipment Setup: poweron.md
-      - Furnace Design: about.md
-
-
       - Pressurizing the Chamber: gascontrol.md
       - Beginning a Growth: growth.md
       - Ending a Growth: endgrowth.md
       - Maintenance: maintenance.md
-    - Other:
-      - Lab Access: access.md
 
 theme: readthedocs
 

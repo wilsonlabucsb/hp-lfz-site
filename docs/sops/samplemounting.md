@@ -1,12 +1,12 @@
 # Sample mounting and alignment
 
-![](sampleholders.png)
+![](../sampleholders.png)
 
 ## Seed rod
 
 ### Mounting
 
-![](seedmounting.png)
+![](../seedmounting.png)
 
 1. Insert the six mounting set screws at the top of the seed rod holder, enough so that they are flush with the inner cylindrical surface.
 

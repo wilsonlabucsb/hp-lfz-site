@@ -1,6 +1,6 @@
 # Sample preparation
 
-![powderprep](powderprep.png)
+![powderprep](../powderprep.png)
 
 Sample preparation materials are located in the Wilson Lab, Engineering Science Building Room 3312.
 

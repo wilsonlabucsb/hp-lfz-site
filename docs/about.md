@@ -14,7 +14,7 @@ Threaded into these window ports are custom sight glasses which fetaure a replac
 ![](windowplug.png){width="400"}
 
 ## Pressure sealing 
-The chamber can be attached to the drives via adapting pieces, also designed by Michael Aling and machined out of the Inconel 718 alloy. The reason for these adapting pieces is the following. The drives are sealed to the processing chamber via a coned high pressure metal-to-metal seal. This is machined directly into the end of the drive ends and cannot easily be replaced. Since a seal will have to be broken each time the sample is mounted / unmounted, a replaceable seal is paramount. We therefore designed an adapting piece which is permanently sealed to the drives via the coned seals. The adaptors in turn are sealed to the chamber via replaceable metal gasket seals, detailed in [Sealing the Chamber](/sealing).
+The chamber can be attached to the drives via adapting pieces, also designed by Michael Aling and machined out of the Inconel 718 alloy. The reason for these adapting pieces is the following. The drives are sealed to the processing chamber via a coned high pressure metal-to-metal seal. This is machined directly into the end of the drive ends and cannot easily be replaced. Since a seal will have to be broken each time the sample is mounted / unmounted, a replaceable seal is paramount. We therefore designed an adapting piece which is permanently sealed to the drives via the coned seals. The adaptors in turn are sealed to the chamber via replaceable metal gasket seals, detailed in [Sealing the Chamber](/docs/sops/sealing.md).
 
 ## Water cooling
 

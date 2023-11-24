@@ -4,7 +4,7 @@
 
 
 
-![](translatorlabeled.png)
+![](../translatorlabeled.png)
 
 ---
 
@@ -16,7 +16,7 @@ Each translator is quite heavy, and sliding it up and down on the furnace framin
 
 ### Where and where not to grab
 
-![](wheretotouch.png){width="400"}
+![](../wheretotouch.png){width="400"}
 
 
 ---
@@ -33,7 +33,7 @@ Each translator is quite heavy, and sliding it up and down on the furnace framin
 
     1. Always MODIFY the automatic translation speed before enabling slow automatic translation - there is a software error that can lead to accidental fast translation if the speed has remained unmodified for an extended period of time. Specifically, we suspect that this occurs only after the **2-finger automatic fast gear mode** (see below) has been used and the automatic translation speed has not been changed since this mode.
 
-![](translatortouchscreen.png)
+![](../translatortouchscreen.png)
 
 The translators are controlled entirely via the touchscreen monitor next to the computers. Each of the buttons is used by tapping once, with the exception of the `Fast Gear` fast translation buttons which must be held down constantly.
 
@@ -83,12 +83,12 @@ Changing the pressure too quickly can violently force the translator shaft in or
 **Snapped shaft**
 The most catastrophic failure has been mechanical failure of the attachment between the shaft and the inner magnet back at its base. The shaft is weakly attached here and even gentle torquing of the shaft can cause failure over time.
 
-![](brokenshaft.png){width="500"}
+![](../brokenshaft.png){width="500"}
 
 
 **Friction in bearings**
 The translators don't have any sort of lubrication. The shaft is meant to simply glide about some plain bearings made of white plastic (Teflon?). These bearings quickly become contaminated with volatilized powder from various growths, and the translator shafts will start to squeak and vibrate as a result. Cleaning this requires opening up the translators which is quite tedious and labor and time intensive - and can be costly if done incorrectly - thus, we tend to live with such vibrations until it is absolutely necessary to replace / clean the bearings. See the Maintenance section for more information.
 
-![](bearings.png)
+![](../bearings.png)
 
 

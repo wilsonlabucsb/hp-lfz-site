@@ -1,6 +1,6 @@
 # Imaging control
 
-![](focus.png)
+![](../focus.png)
 
 ## Camera
 
@@ -38,4 +38,4 @@ The focus of the pyrometer is controlled by the front knob on the pyrometer hous
 - Camera filter = ND1, ND2, or ND4 in place, in addition to shortpass filter.
 
 
-![](filters.png)
+![](../filters.png)
