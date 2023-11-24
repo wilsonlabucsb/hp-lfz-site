@@ -1,7 +1,10 @@
 site_name: High-Pressure Laser Floating Zone Lab
 site_url: https://example.com/
 nav:
-    - Welcome: index.md
+    - Home: index.md
+    - Startup Guide: startupguide.md
+
+    - Lab Access: access.md
     - Furnace Design: about.md
     - Sample Preparation: sampleprep.md
     - Equipment Setup: poweron.md
