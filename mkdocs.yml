@@ -1,23 +1,29 @@
 site_name: High-Pressure Laser Floating Zone Lab
-site_url: https://example.com/
 nav:
     - Home: index.md
-    - Startup Guide: startupguide.md
+    - Guides:
+      - Startup Guide: startupguide.md
+      - Shutdown Guide: shutdownguide.md
+    - Standard Operating Procedures:
+      - Mounting and aligning sample: samplemounting.md
+      - Making feed and seed rods: sampleprep.md
+      - Using the camera: imaging.md
+      - Using the pyrometer: pyrometer.md
+      - Using the lasers: lasercontrol.md
+      - Using the translators: translatorcontrol.md
+      - Sealing the Chamber: sealing.md
+    - Advanced procedures:
+      - Adjusting the laser optics: optics.md
+      - Equipment Setup: poweron.md
+      - Furnace Design: about.md
 
-    - Lab Access: access.md
-    - Furnace Design: about.md
-    - Sample Preparation: sampleprep.md
-    - Equipment Setup: poweron.md
-    - Imaging Control: imaging.md
-    - Laser Control: lasercontrol.md
-    - Translator Control: translatorcontrol.md
-    - Sample Mounting and Alignment: samplemounting.md
-    - Sealing the Chamber: sealing.md
-    - Pressurizing the Chamber: gascontrol.md
-    - Beginning a Growth: growth.md
-    - Ending a Growth: endgrowth.md
-    - Opening and Cleaning the Chamber: postgrowth.md
-    - Maintenance: maintenance.md
+
+      - Pressurizing the Chamber: gascontrol.md
+      - Beginning a Growth: growth.md
+      - Ending a Growth: endgrowth.md
+      - Maintenance: maintenance.md
+    - Other:
+      - Lab Access: access.md
 
 theme: readthedocs
 
