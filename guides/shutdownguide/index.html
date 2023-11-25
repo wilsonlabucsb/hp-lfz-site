@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Shutdown Guide - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shutdown Guide";
+        var mkdocs_page_input_path = "guides\\shutdownguide.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../startupguide/">Startup Guide</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Shutdown Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-i-power-down-the-furnace">Section I: Power down the furnace</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-ii-depressurize-the-chamber">Section II: Depressurize the chamber</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-iii-remove-sample-and-clean-furnace">Section III: Remove sample and clean furnace</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/lasercontrol/">Using the lasers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/imaging/">Using the camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/translatorcontrol/">Using the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/mfc/">Using the mass flow controller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Guides &raquo;</li>
+      <li>Shutdown Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shutdown-guide">Shutdown guide</h1>
+<p><strong>Purpose</strong>: A reference to be used <em>each and every time</em> by experienced users of the furnace.</p>
+<hr />
+<h2 id="section-i-power-down-the-furnace">Section I: Power down the furnace</h2>
+<ol>
+<li>
+<p>Turn off emission on all lasers, and verify that the output power reads "OFF" in the Laser Controller Software.</p>
+</li>
+<li>
+<p>Turn off the translation and rotation.</p>
+</li>
+<li>
+<p>Stop the screen recorder.</p>
+</li>
+<li>
+<p>Stop the pyrometer Data Recorder.</p>
+</li>
+<li>
+<p>Allow chamber to cool to a reasonable temperature.</p>
+</li>
+</ol>
+<hr />
+<h2 id="section-ii-depressurize-the-chamber">Section II: Depressurize the chamber</h2>
+<ol>
+<li>
+<p>Once the chamber is cool, open the chamber outlet ball valve, followed by slowly opening the chamber outlet needle valve to allow a small flow, until the chamber pressure is a few psi lower than the pressure of the inlet piping.</p>
+</li>
+<li>
+<p>Open the inlet ball valve, then slowly open the inlet needle valve to allow gas to vent from the inlet piping into the chamber.</p>
+</li>
+<li>
+<p>Continue opening the outlet needle valve to vent the remainder of the pressure inside the chamber.</p>
+</li>
+</ol>
+<hr />
+<h2 id="section-iii-remove-sample-and-clean-furnace">Section III: Remove sample and clean furnace</h2>
+<ol>
+<li>
+<p><strong><em>Verify that BOTH gauges read zero</em></strong>, and leave the outlet valves open.</p>
+</li>
+<li>
+<p>Remove the top set of clamps.</p>
+</li>
+<li>
+<p>Gently slide the top translator housing upwards and remove the remains of the feed rod, as well as the washers and collars. Consider vacuuming any loose powder.</p>
+</li>
+<li>
+<p>Translate the upper shaft downwards, until it is near (but not at) the translation limit.</p>
+</li>
+<li>
+<p>Clean the length of the upper shaft, then translate it upward into the translator housing.</p>
+</li>
+<li>
+<p>Vacuum any loose powder in the translator.</p>
+</li>
+<li>
+<p>Using a Kimwipe, IPA/EtOH, and some small tweezers, clean the inside of the top translator.</p>
+</li>
+<li>
+<p>Remove the top shroud piece and seal ring.</p>
+</li>
+<li>
+<p>Remove bottom set of clamps.</p>
+</li>
+<li>
+<p>Gently slide the bottom translator housing downwards.</p>
+</li>
+<li>
+<p>Carefully remove the shroud window.</p>
+</li>
+<li>
+<p>Translate the seed rod upwards until the set screw on the bottom of the seed rod holder is visible above the shroud. Carefully remove the crystal and the seed rod mount from the shaft. The crystal may be weakly attached to the seed rod, so it may be wise to grab the crystal first before removing the seed rod mount.</p>
+</li>
+<li>
+<p>Remove the lower part of the shroud and the seal ring.</p>
+</li>
+<li>
+<p>Consider vacuuming or collecting any loose powder.</p>
+</li>
+<li>
+<p>Remove washer, collar, and shroud cup. Careful, as these may be full with powder after a volatile growth.</p>
+</li>
+<li>
+<p>Vacuum any loose powder in the translator.</p>
+</li>
+<li>
+<p>Translate the bottom shaft upwards until it is near (but not at) the translation limit.</p>
+</li>
+<li>
+<p>Clean the length of the bottom shaft, and then translate it downwards into the bottom translator housing.</p>
+</li>
+<li>
+<p>Using a Kimwipe, IPA/EtOH, and some small tweezers, clean the inside of the translator.</p>
+</li>
+<li>
+<p>Using a ball of Kimwipes, IPA/EtOH, and the long tweezers (forceps), clean the inside of the chamber.</p>
+</li>
+<li>
+<p>Clean the interior and exterior off the shroud pieces and shroud window.</p>
+</li>
+<li>
+<p>Place all small hardware in a beaker with some IPA/EtOH, and use the sonicator to clean these.</p>
+</li>
+<li>
+<p>Retract both the top and bottom translator shafts, and slide both translators towards the chamber before leaving.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../startupguide/" class="btn btn-neutral float-left" title="Startup Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../sops/sampleprep/" class="btn btn-neutral float-right" title="Making feed and seed rods">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../startupguide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../sops/sampleprep/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
