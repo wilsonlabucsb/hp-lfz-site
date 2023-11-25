@@ -1,5 +1,7 @@
 # Sealing the chamber
 
+[Work in progress]
+
 The translators are connected to the main chamber via inconel "adapter" pieces which use a replaceable metal-to-metal seal designed by [Destec Engineering Ltd.](https://www.destec.co.uk/). Drawings for the seal design can be found in the Laser Furnace Google Drive.
 
 ![](../img/destecsketch.png)

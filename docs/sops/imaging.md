@@ -1,41 +1,49 @@
-# Imaging control
+# Using the camera
 
-![](../img/focus.png)
+## Section I: Using the camera software
 
-## Camera
+1. The software "Pylon Viewer" is used to view live video feed from the camera. To open pylon viewer, click on the following icon (pinned to the Taskbar).
 
-The camera views the sample through window 1 on the chamber. The software "Pylon Viewer" is used to view live video feed from the camera. Once Pylon Viewer is open, navigate to Window > Devices > Basler acA1300-75gc. In the top left, click the power on button.
+    ![camerasoftware.png](../img/pylon.png)
 
-Then click the video recorder button.
+1. Once Pylon Viewer is open, navigate to `Window > Devices` to open the Devices menu.
 
-Image should appear.
+    ![devices.png](../img/devices.png)
 
-To adjust exposure (brightness) go to Window > Features - All > Acquisition Controls > Exposure Time (ms).
+1. To connect to the camera, double click `Basler acA1300-75gc`, or single-click then press the "Open Device" button in the top left. 
 
-To adjust focus, twist knob on camera
+    ![devices2.png](../img/devices2.png)
 
-To adjust shutter aperture (brightness) manually turn the front tab knob on the camera.
+1. To obtain live video feed, click the "Continuous Shot" button on the main toolbar.
+    
+    ![continuousshot.png](../img/continuousshot.png)
 
-To further dim the brightness use a neutral density (ND) filter which you can slide.
+1. To adjust image settings, go to `Window > Features - All` to open the Features toolbar.
 
-## Pyrometer
+    ![featuresall.png](../img/featuresall.png)
 
-The pyrometer views the sample through window 4 on the chamber. The software "DataTemp MultiDrop" is used to view the video feed and get pyrometry (temperature) readings.
+1. To adjust the exposure time, change the value found in `Acquisition Controls > Exposure Time (Abs)`. The maximum exposure time is typically 100,000 ms (when using aiming beam, for example), and the minimum is 100 ms (for a particularly bright growth).
 
-The brightness / exposure time is automatically controlled by the pyrometer software, it cannot be manually adjusted.
+    ![exposure.png](../img/exposure.png)
 
-The focus of the pyrometer is controlled by the front knob on the pyrometer housing.
+## Section II: Adjusting the camera focusing optics
 
-## Recommended imaging settings for aiming beam:
-- Exposure Time (ms) = 100,000
-- Pyrometer filter = No notch filter
-- Camera filter = No ND filter, shortpass filter optional
+### To adjust brightness
+To adjust the aperture (brightness) manually turn the front tab knob on the focusing optic attached to the camera. To further dim the brightness use a neutral density (ND) filter which you can slide into place.
+
+### To adjust focus
+Manually turn the outer knob on the focusing optic attached to the camera.
+
+![camerafilters.png](../img/camerafilters.png)
+![focus.png](../img/focus.png)
+
+Recommended camera settings for aiming beam
+---
+- **Exposure Time (ms)** = 100,000
+- **Filter** = No ND filter, shortpass filter optional
 - Aiming beam on for lasers 2, 3, 5, 6, and 7. (Not lasers 1 and 4 where the camera and pyrometer are)
 
-## Recommended imaging settings for infrared beam:
-- Exposure Time (ms) = 100 to 20,000
-- Pyrometer filter = Notch filter in place
-- Camera filter = ND1, ND2, or ND4 in place, in addition to shortpass filter.
-
-
-![](../img/filters.png)
+Recommended camera settings for infrared beam
+---
+- **Exposure Time (ms)** = 100 to 20,000
+- **Filter** = ND1, ND2, or ND4 in place, in addition to shortpass filter.

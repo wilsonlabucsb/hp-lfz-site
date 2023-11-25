@@ -15,7 +15,6 @@ nav:
       - Using the mass flow controller: sops/mfc.md
       - Using the low-pressure gas manifold: sops/lowp.md
       - Using the high-pressure gas manifold: sops/highp.md
-      - Using the compressor: sops/compressor.md
       - Sealing the chamber: sops/sealing.md
       - Beginning a growth: sops/begingrowth.md
       - Ending a growth: sops/endgrowth.md

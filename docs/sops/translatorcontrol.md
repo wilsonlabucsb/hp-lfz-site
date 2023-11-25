@@ -2,7 +2,7 @@
 
 ## Translator Design
 
-
+There are two generations of translator units - the first generation has slightly thinner diameter lead screw and keyed shaft. The second generation has a thicker lead screw and keyed shaft.
 
 ![](../img/translatorlabeled.png)
 
@@ -46,10 +46,12 @@ To enable rotation, simply tap the CW or CCW buttons and the shaft will begin to
 !!! warning
     ***It is recommended to avoid using the +/- 10 rpm buttons***, as these can cause decoupling of the magnet pack and/or failure of the rotation motor.
 
+!!! note
+    The rotation rate has been shown to work up to 45 rpm. Some translators seem to have issues rotating at certain speeds (e.g., near 15 rpm) due to friction. 
 
-### RPM limits
 
-There are two generations of translator units - the first generation has slightly thinner diameter lead screw and keyed shaft. These older models are thought to have an upper limit of 15 rpm, above which the rotation motor may not operate continuously. The second generation, having thicker lead screw and keyed shaft, has been demonstrated to work at speeds up to 30 rpm.
+
+
 
 --- 
 
@@ -75,7 +77,7 @@ Then, with rotation enabled, tap the `Automatic` up/down buttons to begin transl
     
 ### Changing pressure too quickly
 
-Changing the pressure too quickly can violently force the translator shaft in or out of the pressure tube, decoupling it from the magnet pack and potentially damaging equipment / samples. Always pressurizing and depressurize slowly to avoid this.
+Changing the pressure too quickly can violently force the translator shaft in or out of the pressure tube, decoupling it from the magnet pack and potentially damaging equipment / samples. Always pressurize and depressurize slowly to avoid this.
 
 ### Mechanical failure points
 

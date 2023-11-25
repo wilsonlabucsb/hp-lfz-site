@@ -26,7 +26,7 @@
 
 ---
 
-### Basic LabVIEW working principles
+## Section II: Basic LabVIEW working principles
 
 The LabVIEW software is built to run in a continunous `while` loop, which only stops when the large red STOP (![labviewstop](../img/labviewstop.png){width="50"}) button is pressed. The current step is indicated by the `Step` text box indicator on the top of the Laser Controller.
 
@@ -36,62 +36,72 @@ This results is some ***delays*** between, for example, when you click the `Aimi
 
 ---
 
-### Enabling communication with the lasers
+## Section III: Enabling communication with the lasers
 
 On the left hand side of the Laser Controller, there are 7 buttons enabling communication with each of the laser units, shown here:
 
 ![lasercommunication](../img/lasercommunication.png)
 
-In the picture above, all lasers will receive commands as indicated by the illuminated green light on each button. When sending commands to a select few lasers, simply disable the corresponding button in this section.
+In the scenario pictured above, all lasers will receive commands as indicated by the illuminated green light on each button. In the case that you want to send a command to a select few lasers, only enable the communication button for those lasers, and disable communication for the rest.
+
+!!! example
+	![selectfew](../img/selectfew.png)
 
 ---
 
-### Using the aiming beam (visible red light)
+## Section IV: Using the aiming beam (visible red light)
 
-For sample alignment, beam alignment, and beam focusing, the lasers offer a visible red laser light source called the "aiming beam". This radiation is visible, and is relatively low power. While delivering lower power than the infrared light, direct eye contact with the aiming beam can still cause injury.
+For sample alignment, beam alignment, and beam focusing, the lasers offer a visible red laser light source called the "aiming beam". This radiation is visible, and is relatively low power. **While this red light is not as powerful as the infrared light, it can still cause damage to the eyes.**
 
 To enable the aiming beam, enable communication with any of lasers 2, 3, 5, 6 or 7 and click the `Aiming Beam` button on the Laser Controller.
 
-!!! warning
-	Avoid using the aiming beam on lasers 1 and 4 - the semi-transparent mirrors in front of the camera and pyrometer are transparent to this red light and the aiming beam will obstruct viewing on windows 1 and 4.
+!!! tip
+	Avoid using the aiming beam on lasers 1 and 4. Here, the semi-transparent mirrors in front of the camera and pyrometer are transparent to this red light and the aiming beam will effectively blind the camera on windows 1 and the pyrometer on window 4.
 
-![aimingbeambutton](../img/aimingbeambutton.png)
+![turnonaimingbeam.png](../img/turnonaimingbeam.png)
 
 ---
 
-### Using the infrared beam (1070 nm light)
+## Section V: Using the infrared beam (1070 nm light)
 
 For delivering heating power to a sample, use the infrared beam, which has a wavelength of 1070 nm and a maximum power output of 200 W. There are several steps to using the infrared beam.
 
 1. Press the green `Start` button on the front of each laser unit to *arm* the lasers for emission. You will hear the cooling fans spin up on each unit. This does not mean laser light is being emitted at this point, but laser goggles and curtains should be used at all times when the lasers are in this state (see [Laser Safety](#1-laser-safety)).
+	![pressstart.png](../img/pressstart.png)
 1. Ensure that the proper filtering optics are in place:
-	- Notch filter (1064 nm) in front of the pyrometer
-	![notch](notch.png)
-	- Short pass filter in front of the camera
-	- If needed, a neutral density filter (options: ND1, ND2, ND4) to dim the image in front of the camera as well.
-	![camerafilters](camerafilters.png)
-1. Click `Emission On`. You should see the orange LED bar on the front of each laser unit flash three times and stay illuminated. ***This means that the infrared beam is emitting light - be cautious.***
-
+	- The pyrometer requires a notch filter (blocks light near 1064 nm) 
+	![notch](../img/notch.png)
+	- The camera requires a short pass filter (allows wavelengths shorter than 750 nm to be transmitted) and, if desired, a neutral density filter (options: ND1, ND2, ND4 (darkest)) to dim the intensity of all wavelengths of light
+	![camerafilters](../img/camerafilters.png)
+1. Verify that the `Current Setpoint (%)` is at the expected value before turning `Emission On`. `RCS: 0.0` means that the setpoint is 0% of the total current (equivalent to a power of 0 watts), and `RCS: 100.0` means that the setpoint is 100% of the total current (equivalent to the maximum power of 200 watts). **Typically, the lasers should be at `RCS: 0.0` before you click `Emission On`.**
 	![emon](../img/emon.png)
+1. Perform a safety check before turning on emission:
+	- Laser safety sign attached to door
+    - Laser safety goggles on
+    - Laser curtains closed
+    - All lasers and optics securely attached to furnace
+    - `Current Setpoint (%)` at expected value
+1. Click `Emission On`. You should see the orange LED bar on the front of each laser unit flash three times and stay illuminated. ***This means that the infrared beam is emitting light - be cautious.***
+   ![ledbar.png](../img/ledbar.png)
+
+	
 
 ---
 
-### Setting the laser output power
+## Section VI: Setting the laser output power
+
+!!! warning
+	These commands only set the power for the lasers for which `Laser Communication` is enabled. The power setpoint for the other lasers will remain unmodified in this case.
 
 Three tabs **Set Power, Ramp Power, and Set Pulsing** in the center of the laser controller are used as inputs to control the laser output power.
 
-![powercontrol](../img/powercontrol.png)
+![tabs](../img/tabs.png)
 
-#### Manually set a power
+#### `Set Power`: Manually choose setpoint
 
 Using the **Set Power** tab, enter a power in the `Power (W)` input field, and press the `Set Power` button to set the power.
 
-!!! warning
-	This only sets the power for the lasers for which `Laser Communication` is enabled. The power setpoint for the other lasers will remain unmodified in this case.
-
----
-
-#### Automatic power ramping
+#### `Ramp Power`: Automatic power ramping
 
 ![ramppower](../img/ramppower.png)
 
@@ -111,9 +121,7 @@ Using the **Set Power** tab, enter a power in the `Power (W)` input field, and p
 
 1. Once the setpoint reaches the target power, the ramp will stop automatically.
 
----
-
-#### Laser pulsing
+#### `Set Pulsing`: Reduce laser power by pulsing laser on/off
 
 The laser units are equipped with an internal pulsing control which allows the beam to pulse at a chosen frequency with chosen pulse width. These are set using the **Set Pulsing** tab. 
 
@@ -131,40 +139,4 @@ The [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) is then controlled ex
 
 ![](../img/dutycycle.png){width="200"}
 
-
-### Understanding the outputs / logfile
-
 ---
-
-
-## Laser components
-Each fiber laser consists of a control unit, a fiber optic cable, and collimating optics. Each laser emits a wavelength of 1070 nm and is capable of reaching 200 W of highly collimated infrared light. This totals a whopping 1400 W of laser power, and just a few milliwatts can start a fire. The light is invisible, and thus can be incredibly dangerous. It is important to prioritize laser safety when working with these furnaces.
-
-***Some quick do's and don'ts:***
-!!! danger
-	- Do not bend the fiber optic cable, it is very fragile and has a minimum curvature that it can withstand.
-	- Do not allow any dust or dirt to obstruct the output of the laser optics. These particles can burn or melt the optics themselves.
-
-## Laser optics
-### Anti-reflection coatings
-### Focusing optics
-### In-plane viewing optics
-
----
-
-## Laser safety
-There are several key components of laser safety in the Laser Lab.
-
-- Firstly, the optics should always keep the beam in an enclosed space, such that minimal free laser light is able to leave the lens tubes and/or chamber.
-
-- Secondly, the laser curtains should always be (***closed***) when the lasers are armed to emit any infrared light. This is evidenced by the green "Start" button being illuminated on the front housing of each laser unit. This does not necessarily mean they *are* emitting any infrared light - emission is indicated by the large orange LED bar on the front of each laser unit.
-
-- Similarly, whenever the laser units are armed, occupants of the lab should be wearing laser safety goggles with optical density (OD) 6+ at 1070 nm. These are not strictly required when the laser curtains are closed but should certainly be worn at all times when the curtain is open and the lasers are armed (regardless of whether emission is on).
-
-
-### Using the Laser Unit Touchscreens
-
-The touchscreen on the front of the laser units should be used sparingly, only for basic or absolutely necessary tasks such as turning on the aiming beam, enabling/disabling pulsing ("Gate Mode"), and for urgent needs to turn off emission / emergency shutoff.
-
-![](../img/lasertouchscreen.png)
-
