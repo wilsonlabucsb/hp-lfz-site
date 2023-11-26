@@ -122,6 +122,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../maxpro/">MaxPro piping (high-P)</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Modifying this site</a>
+    <ul class="current">
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Other</span></p>
@@ -165,7 +167,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="modifying-this-site">Modifying this site</h1>
+<p>The site lives on a GitHub repository.</p>
+<p>To update the site, you will need to pull this repository to your local computer either using the command line or an IDE (e.g., PyCharm).
+From there, you need the <code>mkdocs</code> package to build and deploy the updated files to GitHub pages.</p>
+<ol>
+<li>
+<p>Pull repository </p>
+</li>
+<li>
+<p>Make changes</p>
+</li>
+<li>
+<p><code>mkdocs build</code></p>
+</li>
+<li>
+<p><code>mkdocs gh-deploy</code></p>
+</li>
+</ol>
               
             </div>
           </div><footer>
