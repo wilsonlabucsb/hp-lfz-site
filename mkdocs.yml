@@ -46,6 +46,7 @@ nav:
       - Beginning a Growth: growth.md
       - Ending a Growth: endgrowth.md
       - Maintenance: maintenance.md
+      - Issues and Fixes: issuesandfixes.md
 
 theme: readthedocs
 

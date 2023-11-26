@@ -139,4 +139,8 @@ The [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) is then controlled ex
 
 ![](../img/dutycycle.png){width="200"}
 
----
+## Section VII: Restarting the laser controller software while using lasers
+
+If you choose to restart the laser controller software, you should NOT close the window but instead use either the "stop sign" icon in the LabVIEW toolbar OR the "STOP" button on the front panel of the laser controller itself.
+
+After this, the front panel should remain open but the program should be stopped. At this point, the safest thing to do is to disable communication with all seven lasers before clicking the "Run" (arrow symbol) button in the LabVIEW toolbar. This ensures that, when the program starts up, it does not send a set of unintentional commands to the lasers which might have unintended consequences (e.g., it might turn the lasers off mid-growth). 
