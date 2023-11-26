@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Useful markdown - High-Pressure Laser Floating Zone Lab</title>
+    <title>Issues and Fixes - High-Pressure Laser Floating Zone Lab</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Useful markdown";
-        var mkdocs_page_input_path = "useful_markdown.md";
+        var mkdocs_page_name = "Issues and Fixes";
+        var mkdocs_page_input_path = "issuesandfixes.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -125,7 +125,7 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Other</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../access/">Lab Access</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../poweron/">Equipment Setup</a>
@@ -138,7 +138,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../issuesandfixes/">Issues and Fixes</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Issues and Fixes</a>
+    <ul class="current">
+    </ul>
                   </li>
               </ul>
       </div>
@@ -155,7 +157,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Useful markdown</li>
+          <li>Other &raquo;</li>
+      <li>Issues and Fixes</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -164,29 +167,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Several of these documents are outdated. The most up-to-date SOPs can be found on this site.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This is a warning.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This is a tip.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This is info.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>This is danger.</p>
-</div>
+                <h1 id="issues-and-fixes">Issues and Fixes</h1>
+<p>This page is intended to serve as a FAQ of sorts, so that users can find answers if they are experiencing a known issue.</p>
+<p>Issue: Shaft vibrates when rotating.
+Solution: Lubricate the length of the translator shaft with MoS<span class="arithmatex">\(_2\)</span> - grab a small vial and pour in a small amount of MoS<span class="arithmatex">\(_2\)</span> powder. Add some IPA or EtOH to create a suspension and sonicate to mix.</p>
+<p>Issue: Shaft is fully retracted into the translator housing.
+Solution: You will need to take off the rear flange from the opposite end of the translator. This involves undoing the large four bolts that hold the cone and thread seal and lock the dead flange in place. Be very careful to do the untightening evenly, as to keep the force on the cone-shaped sealing surface relatively balanced. As the flange begins to loosen, pull it away from the cone-shaped sealing surface as any scratches to this surface will cause a very expensive leak. You can use a long thin object (like a wooden dowel) to push the shaft back up and out into its normal position. If you have trouble getting the shaft to line up with the bearing holder (which should have a tight tolerance), you can use another thin, long object from the other end of the translator to try to nudge the shaft into the center of the bearing so it can pass through.</p>
+<p>Issue: Shaft has disconnected from magnet pack
+Solution: Send it back to SciDre for repair.</p>
+<p>Issue: Shaft does not translate smoothly but gets stuck as it moves.
+Solution: Similar to the issue of vibration during shaft rotation - need to lubricate the shaft with MoS<span class="arithmatex">\(_2\)</span>.</p>
+<p>Issue: Chamber repeatedly leaks at the seal rings.
+Solution: If this issue persists even after replacing with fresh sesal rings, check the alignment of the Inconel adapters with the chamber. You can do this using a straightedge up against the sides of the adapter/chamber where the sealing surfaces meet, or by attempting to slide a piece of weigh paper in the gap between the adapter and chamber in an attempt to feel if the gap is bigger on one side more than another. Either the adapter is not mounted straight onto the translator, or the entire translator+adapter assembly is not mounted coaxial with the chamber. Remounting of these parts may be necessary.</p>
+<p>Issue: The lasers are not communicating, they sometimes disconnect, or the LabVIEW software is stuck at the "read values" step.
+Solution: Try restarting the LabVIEW software. See instructions on how to do this in the "Using the Lasers" SOP.</p>
+<p>Issue: I tried to do automatic translation and the shaft moved as if I touched the fast gear button, even though the speed I had set for the automatic mode was slow.
+Solution: This is a known bug in the translator software. This occurs if you use the "2-finger touch trick" to hold down the fast gear button (without having to hold your finger there the whole time), and if your next action is to enable automatic translation. The key is to do an intermediate step before enabling automatic translation. For example, after using the "2-finger touch trick", you should arbitrarily press any +/- key to change the automatic translation speed (you can, for example add 0.1 mm/hr and then subtract 0.1 mm/hr). Now, because there was some intermediate action, you should have no problem enabling the automatic mode. In any case, it is safest to turn on automatic translation in a "harmless" direction. For example, begin translating the seed downwards or the feed upwards, so that you don't accidentally crash the feed and seed into each other if you run into this bug. The worst that could happen is that this bug appears and they move unexpectedly fast, but in a safe direction.</p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../maintenance/" class="btn btn-neutral float-left" title="Maintenance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -207,6 +209,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../maintenance/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

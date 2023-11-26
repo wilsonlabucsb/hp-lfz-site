@@ -79,6 +79,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-vii-restarting-the-laser-controller-software-while-using-lasers">Section VII: Restarting the laser controller software while using lasers</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../imaging/">Using the camera</a>
@@ -159,6 +161,8 @@
                   <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../issuesandfixes/">Issues and Fixes</a>
                   </li>
               </ul>
       </div>
@@ -303,7 +307,9 @@
 <p>The default pulse frequency or <strong>Pulse Repetition Rate (Hz)</strong> as labeled in the Laser Controller software is 100 Hz - meaning that 100 pulses occur per second, equivalent to one pulse every 10 ms.</p>
 <p>The <a href="https://en.wikipedia.org/wiki/Duty_cycle">duty cycle</a> is then controlled exclusively by the pulse width, meaning that a pulse with of 5 ms corresponds to a duty cycle = 50% as shown below. In the default configuration, the duty cycle can be calculated using the forumla <span class="arithmatex">\(\rm{Duty} = \rm{Width}/10~\rm{ms} \times 100\%\)</span>.</p>
 <p><img alt="" src="../../img/dutycycle.png" width="200" /></p>
-<hr />
+<h2 id="section-vii-restarting-the-laser-controller-software-while-using-lasers">Section VII: Restarting the laser controller software while using lasers</h2>
+<p>If you choose to restart the laser controller software, you should NOT close the window but instead use either the "stop sign" icon in the LabVIEW toolbar OR the "STOP" button on the front panel of the laser controller itself.</p>
+<p>After this, the front panel should remain open but the program should be stopped. At this point, the safest thing to do is to disable communication with all seven lasers before clicking the "Run" (arrow symbol) button in the LabVIEW toolbar. This ensures that, when the program starts up, it does not send a set of unintentional commands to the lasers which might have unintended consequences (e.g., it might turn the lasers off mid-growth). </p>
               
             </div>
           </div><footer>
