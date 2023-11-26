@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Startup Guide - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Startup Guide";
+        var mkdocs_page_input_path = "guides\\startupguide.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Startup Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-i-turning-on-equipment">Section I: Turning on equipment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-ii-loading-your-sample">Section II: Loading your sample</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-iii-pressurizing-the-chamber">Section III: Pressurizing the chamber</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#if-using-ar-or-n_2">If using Ar  or N\(_2\)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-using-8020-aro_2">If using 80:20 Ar:O\(_2\)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-iv-setup-static-gas-pressure-or-gas-flow">Section IV: Setup static gas pressure or gas flow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-v-begin-growth">Section V: Begin growth</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shutdownguide/">Shutdown Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/lasercontrol/">Using the lasers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/imaging/">Using the camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/translatorcontrol/">Using the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/mfc/">Using the mass flow controller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sops/endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Guides &raquo;</li>
+      <li>Startup Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="startup-guide">Startup guide</h1>
+<p><strong>Purpose</strong>: A reference to be used <em>each and every time</em> by experienced users of the furnace.</p>
+<hr />
+<h2 id="section-i-turning-on-equipment">Section I: Turning on equipment</h2>
+<ol>
+<li>
+<p>Create a new Growth Log in the "<a href="https://drive.google.com/drive/folders/1A3_43n8ItInI4Z7pf4uCt52mfkHWRzl-?usp=drive_link">Growth Logs</a>" folder in the <a href="https://drive.google.com/drive/folders/1-5bD7GNJCqUvJMFQOrpgeaQlDUMaeCdf?usp=drive_link">LOKII Google Drive</a>.    </p>
+</li>
+<li>
+<p>On the front of each of the seven laser units, turn the key clockwise to the "ON" position.
+    <img alt="laser_unit_front_cartoon.png" src="../../img/laser_unit_front_cartoon.png" width="400" /></p>
+</li>
+<li>
+<p>On the front of the translator control unit, flip the power switch on the top right.
+   <img alt="translator_unit_front.png" src="translator_unit_front.png" /></p>
+</li>
+<li>
+<p>On Computer 1, open the camera software, Pylon Viewer (<a href="">more info</a>)
+   <img alt="pylon.png" src="../../img/pylon.png" /></p>
+</li>
+<li>
+<p>On Computer 1, open the pyrometer software, DataTemp MultiDrop (<a href="">more info</a>)
+   <img alt="dtmd.png" src="../../img/dtmd.png" /></p>
+</li>
+<li>
+<p>On Computer 2, open the thermocouple software, DP1001 AM (<a href="">more info</a>)
+   <img alt="tc.png" src="../../img/tc.png" /></p>
+</li>
+<li>
+<p>On Computer 2, open the Laser Controller Software (<a href="">more info</a>)
+   <img alt="laser_software.png" src="../../img/laser_software.png" /></p>
+</li>
+<li>
+<p>On Computer 2, open the webcam software to monitor the pressure gauge, Logitech Camera Settings (<a href="">more info</a>)
+   <img alt="webcam.png" src="../../img/webcam.png" /></p>
+</li>
+<li>
+<p>On Computer 2, open the mass flow controller software, FlowDDE and FlowPlot (<a href="">more info</a>)
+   <img alt="mfc_software.png" src="../../img/mfc_software.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="section-ii-loading-your-sample">Section II: Loading your sample</h2>
+<ol>
+<li>
+<p>Slide the bottom translator housing downward.</p>
+</li>
+<li>
+<p>Clean all four sealing surfaces (top translator, top of chamber, bottom of chamber, and bottom translator) using a Kimwipe and IPA/EtOH. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Use an air duster to blow away the Kimwipe fibers off the sealing surfaces.</p>
+</li>
+<li>
+<p>Place one seal ring on the top of the chamber, and one seal ring on the bottom translator. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Gently drop the shroud cup into the bottom translator, followed by a shaft collar (without set screw). (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Position a collar on the bottom translator shaft, about 2 cm below the tip, and secure using the set screw.</p>
+</li>
+<li>
+<p>Add an alumina washer on top of the collar.</p>
+</li>
+<li>
+<p>Mount the seed rod in the seed rod holder and minimize precession. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Place the seed rod holder on the bottom translator shaft, and secure using the set screw.</p>
+</li>
+<li>
+<p>Carefully slide the lower shroud piece over the seed rod (it may be necessary to translate the shaft downward at this point) and down into the translator to mate with the shroud cup. Rotate the lower shroud piece until the hole on the side is facing the gas outlet.</p>
+</li>
+<li>
+<p>Place the shroud window on top of the lower shroud.</p>
+</li>
+<li>
+<p>Carefully raise the lower translator housing upward until it is flush with the bottom of the chamber.</p>
+</li>
+<li>
+<p>Carefully lower the top shroud piece into the chamber until it rests on the shroud window.</p>
+</li>
+<li>
+<p>Mount the feed rod in the feed rod holder. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Measure the length of the mounted feed rod and record it in the Growth Log.</p>
+</li>
+<li>
+<p>Attach an alumina washer and shaft collar to the upper translator shaft, about 2 cm above the tip.</p>
+</li>
+<li>
+<p>Attach another alumina washer and the upper half of the feed rod holder to the upper translator shaft.</p>
+</li>
+<li>
+<p>Slide the upper translator down until it is flush with the top of the chamber. Be careful not to collide the feed and seed rods!</p>
+</li>
+<li>
+<p>Install the lower and upper clamps, and torque the bolts to 23 ft-lbs. (<a href="">more info</a>)</p>
+</li>
+</ol>
+<hr />
+<h2 id="section-iii-pressurizing-the-chamber">Section III: Pressurizing the chamber</h2>
+<h3 id="if-using-ar-or-n_2">If using Ar  or N<span class="arithmatex">\(_2\)</span></h3>
+<ol>
+<li>
+<p>Close all low-pressure valves, including the mass flow controller (using FlowPlot software, set flowrate to <code>0.0</code>). (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Open the gas bottle in room 3232 (gowning room).</p>
+</li>
+<li>
+<p>Open valves downstream of the gas bottle, up to the vent valve.
+   <img alt="vent.png" src="vent.png" /></p>
+</li>
+<li>
+<p>Using the FlowPlot software, flow gas to vent valve at the flowrate specified below, in order to flush out any oxygen in the low pressure piping. Flow for 5 minutes. (<a href="">more info</a>)</p>
+<ul>
+<li><strong>Ar</strong>: Setpoint = 50% (Flowrate = 5 SLPM)</li>
+<li><strong>N<span class="arithmatex">\(_2\)</span></strong>: Setpoint = 65% (Flowrate = 5 SLPM)</li>
+</ul>
+</li>
+<li>
+<p>Open valves upstream of the getter.</p>
+</li>
+<li>
+<p>Open valves downstream of the getter to vent valve. Be cautious as the getter may be pressurized as much as 1,000 psi.</p>
+</li>
+<li>
+<p>Open all valves downstream of the vent valve to the chamber outlet.</p>
+</li>
+<li>
+<p>Close the vent valve, and the gas should begin flowing into the chamber and out of the chamber outlet piping.</p>
+</li>
+<li>
+<p>Turn on the compressor at a very slow rate in order to flush out any residual oxygen. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Close the chamber outlet valves and the chamber will begin pressurizing. Pressurize up to 200 psi, then close the chamber inlet needle valve.</p>
+</li>
+<li>
+<p>Purge the chamber by opening the outlet ball valve followed by carefully opening the outlet needle valve. Let the pressure drop to just above zero, but do not allow the pressure to reach exactly zero.</p>
+</li>
+<li>
+<p>Close the chamber outlet valves once again, and carefully open the chamber inlet needle valve.</p>
+</li>
+<li>
+<p>Repeat these steps (pressurize to 200 psi and purge) at least 3 times.</p>
+</li>
+<li>
+<p>Open the chamber outlet valves and continue to allow gas to flow through the chamber and out of the outlet for these next few steps.</p>
+</li>
+<li>
+<p>Next, dry the feed rod. To do so, turn on the laser emission, and raise the power until the rod begins to glow, without melting it. Translate the rod relatively fast (upwards of 100 mm/hr) through the laser beam to remove any residual moisture. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Turn off the laser emission.</p>
+</li>
+<li>
+<p>Bring the feed and seed rods back to their starting positions.</p>
+</li>
+<li>
+<p>Close the chamber outlet valves, and the chamber will begin pressurizing. Allow the chamber to reach the bottle pressure (usually around 1,200 psi), or the desired pressure, whichever is lower.</p>
+</li>
+<li>
+<p>If the desired pressure is higher than the bottle pressure, turn on the compressor until the desired pressure is reached. (<a href="">more info</a>)</p>
+</li>
+</ol>
+<h3 id="if-using-8020-aro_2">If using 80:20 Ar:O<span class="arithmatex">\(_2\)</span></h3>
+<ol>
+<li>
+<p>Close all low-pressure valves, including the mass flow controller (using FlowPlot software, set flowrate to <code>0.0</code>). (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Open the gas bottle in room 3232 (gowning room).</p>
+</li>
+<li>
+<p>Open all valves downstream of the gas bottle, up to the mass flow controller.</p>
+</li>
+<li>
+<p>Open all valves downstream of the mass flow controller to the chamber outlet.</p>
+</li>
+<li>
+<p>Using the FlowPlot software, set gas flowrate to desired value. Gas should begin flowing into the chamber and out of the chamber outlet piping.</p>
+</li>
+<li>
+<p>Close the chamber outlet valves and the chamber will begin pressurizing.</p>
+</li>
+<li>
+<p>Allow the chamber to reach the bottle pressure (usually around 1,200 psi), or the desired pressure, whichever is lower.</p>
+</li>
+<li>
+<p>If the desired pressure is higher than the bottle pressure, turn on the compressor until the desired pressure is reached. (<a href="">more info</a>)</p>
+</li>
+</ol>
+<hr />
+<h2 id="section-iv-setup-static-gas-pressure-or-gas-flow">Section IV: Setup static gas pressure or gas flow</h2>
+<p><strong>If using static pressure</strong>, close chamber inlet valves and move on to the next section.</p>
+<p><strong>Otherwise, if using gas flow</strong>, leave chamber inlet valves open and refer to the following steps:</p>
+<ol>
+<li>
+<p>Turn on the compressor and set it to a slow rate. Loosen the pressure limiter just until the limit is reached (a whistle-like noise should sound).</p>
+</li>
+<li>
+<p>Close the inlet needle valve.</p>
+</li>
+<li>
+<p>With the outlet needle valve closed, open the outlet ball valve.</p>
+</li>
+<li>
+<p>Carefully open the outlet needle valve to allow a small flow.</p>
+</li>
+<li>
+<p>Carefully open the inlet needle valve to allow a small flow.</p>
+</li>
+<li>
+<p>Balance the outlet and inlet needle valve until a desired equilibrium is reached.</p>
+</li>
+</ol>
+<hr />
+<h2 id="section-v-begin-growth">Section V: Begin growth</h2>
+<ol>
+<li>
+<p>Bring the feed and seed rods to their starting positions.</p>
+</li>
+<li>
+<p>Focus and align the camera and pyrometer on the seed rod. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Place the notch filter in front of the pyrometer. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Slide a neutral density filter in front of the camera, if desired. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Place the laser safety sign on the outside of the door.</p>
+</li>
+<li>
+<p>Close the laser curtains.</p>
+</li>
+<li>
+<p>Press the green "Start" button on the front of each laser unit to enable emission. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Enable communication with all seven lasers in the Laser Controller Software.</p>
+</li>
+<li>
+<p>Start the pyrometer Data Recorder. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Start the screen recorder. (<a href="">more info</a>)</p>
+</li>
+<li>
+<p>Begin growth! (<a href="">more info</a>)</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../shutdownguide/" class="btn btn-neutral float-right" title="Shutdown Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../shutdownguide/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

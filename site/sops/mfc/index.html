@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Using the mass flow controller - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using the mass flow controller";
+        var mkdocs_page_input_path = "sops\\mfc.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/startupguide/">Startup Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/shutdownguide/">Shutdown Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lasercontrol/">Using the lasers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../imaging/">Using the camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../translatorcontrol/">Using the translators</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the mass flow controller</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#setting-up-communication-with-the-mfc">Setting up communication with the MFC:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-flowplot">Using FlowPlot</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#links">Links</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-the-mfc">Setting the MFC</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#determining-the-mfc-flow-setting">Determining the MFC flow setting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-fluidat">Using Fluidat</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Standard Operating Procedures &raquo;</li>
+      <li>Using the mass flow controller</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="using-the-mass-flow-controller-mfc">Using the Mass Flow Controller (MFC)</h1>
+<h2 id="setting-up-communication-with-the-mfc">Setting up communication with the MFC:</h2>
+<ol>
+<li>Plug the black USB-RS232 connector into your computer.</li>
+<li>Install FlowDDE from the Bronkhorst website (see below) onto your computer. This is needed to run FlowPlot and set the MFC.</li>
+<li>Install FlowPlot from the Bronkhorst website (see below) onto your computer.</li>
+</ol>
+<h2 id="using-flowplot">Using FlowPlot</h2>
+<ol>
+<li>Open FlowDDE and configure communication settings:<ul>
+<li>Go to "Communication” 🡪 "Communication settings” </li>
+<li>Select the correct Com port (#6)</li>
+</ul>
+</li>
+<li>Start communication with the MFC<ul>
+<li>Go to  "Communication” 🡪 "Open communication”</li>
+<li>Should display additional text on the FlowDDE screen indicating it is talking to the MFC, final line should say "Server is active and ready for any client”</li>
+<li>Note that you can check that communication has been established by going to "FLOW-BUS” and clicking on Channel 1 (i.e. the only connected instrument) listed on the left-hand side. The LEDs on top of the MFC should blink red and green.</li>
+<li>FlowDDE can now be minimized.</li>
+</ul>
+</li>
+<li>Open FlowPlot. The "Select Parameter” screen will pop up.<ul>
+<li>Make sure the "Mode” drop-down menu at the bottom left is set to "18. RS232”.</li>
+<li>The three lines displayed are:<ul>
+<li>Measure – the measured flow rate out of the MFC (in %)</li>
+<li>Setpoint – the set flow rate of out of the MFC (in %)</li>
+<li>Valve out – setting of the outlet valve (how "open" it is... not important)</li>
+</ul>
+</li>
+<li>If you desire further confirmation you are connected to the MFC, the LEDs can be made to blink from the "Select Parameter” screen by clicking "Identify instrument (wink LEDs)”.</li>
+<li>Click "OK”</li>
+</ul>
+</li>
+</ol>
+<h2 id="links">Links</h2>
+<p><a href="https://www.bronkhorst.com/int/products/accessories-and-software/flowware/flowdde/">MFC data exchange program, FlowDDE</a></p>
+<p><a href="https://www.bronkhorst.com/int/products/accessories-and-software/flowware/flowplot/#p_lt_ctl07_pageplaceholder_p_lt_ctl01_BRVideoWebPart_divMain">MFC data plot/parameter setting program, FlowPlot</a>  </p>
+<h2 id="setting-the-mfc">Setting the MFC</h2>
+<ol>
+<li>In the main plotting window (with Value vs Time displayed) of FlowPlot, click the "Start” button on the right – plot lines should appear.</li>
+<li>The flow rate of the MFC can then be set in a variety of ways:<ul>
+<li>Input box above "Send” button – type value you want and click "Send”. </li>
+<li>Press the +5/-5 buttons (in %).</li>
+<li>Preset value buttons (100, 80, 50, 20 , 0%)</li>
+</ul>
+</li>
+<li>The MFC will now attempt to establish flow at the rate indicated by the % setting. The green and red lines should quickly converge to the set value. Flow will continue from the MFC until the upstream and downstream pressures equalize. </li>
+</ol>
+<h2 id="determining-the-mfc-flow-setting">Determining the MFC flow setting</h2>
+<p>The value input to the MFC is in %, which is the percent of the full scale of flow the MFC can do. This MFC is calibrated for Ar at 1300 psi (90 bar) with a flow range of .2 – 10 ls/min (standard liters per minute = at 20 °C and 1 atm). </p>
+<p>There are several use-cases for the MFC:</p>
+<ol>
+<li>You are flowing Ar and the regulator is set to 1300 psi (calibration condition) = MFC can be set by directly converting % to flow rate using the calibrated flow range. So, 10% = 1 ls/min, 50% = 5 ls/min and so on. Anything in the range (0%,.2%] would presumably yield the minimum flow of .2 ls/min.</li>
+<li>You are flowing Ar, but at a lower pressure than 1300 psi = use conversion factor from Fluidat (see below), then convert to % in the same way. </li>
+<li>You are flowing N2, regardless of the outlet pressure from the regulator = use conversion factor from Fluidat (see below), then convert to % in the same way. </li>
+</ol>
+<h2 id="using-fluidat">Using Fluidat</h2>
+<p>Fluidat is a program provided by Bronkhorst that allows for calculation of gas conversion factors. These factors allow one to provide an equivalent mass flow of a gas different from the one the MFC has been calibrated for. The calibrated gas is directly connected to the % value set in FlowPlot, as described above, but the conversion factor must be applied for a different gas.</p>
+<ol>
+<li>Go to <a href="https://www.fluidat.com/default.asp">https://www.fluidat.com/default.asp</a> and use the log-in information provided below<ul>
+<li>Username = e.zoghlin</li>
+<li>Password = WilsonLab</li>
+</ul>
+</li>
+<li>Go to "Conversion Factor” 🡪 "Gas Conversion Factor” at the top of the page, will display the conversion factor calculator.</li>
+<li>Click on the text in the "Fluid” row for "Fluid from” column and change to the gas you are using (presumably N2). For "Fluid to” change to Ar.</li>
+<li>Enter the desired flow rate in the box. Be sure to set units to ls/min (standard liters per minute)</li>
+<li>Enter the outlet pressure of the regular in desired units [psi(g) or bar(g), with "g" = gauge]</li>
+<li>Make sure temperature reads 20 °C </li>
+<li>Change "Instrument model" drop-down menu to "EL-FLOW".</li>
+<li>Hit calculate, which will provide an equivalent Ar flow. Convert this to % (see "Determining the MFC flow settings” above) and send to the MFC.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../translatorcontrol/" class="btn btn-neutral float-left" title="Using the translators"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lowp/" class="btn btn-neutral float-right" title="Using the low-pressure gas manifold">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../translatorcontrol/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lowp/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

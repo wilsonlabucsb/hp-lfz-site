@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Using the translators - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using the translators";
+        var mkdocs_page_input_path = "sops\\translatorcontrol.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/startupguide/">Startup Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/shutdownguide/">Shutdown Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lasercontrol/">Using the lasers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../imaging/">Using the camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the translators</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#translator-design">Translator Design</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#raising-and-lowering-the-translator-housings">Raising and lowering the translator housings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#counterweight-system">Counterweight system</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#where-and-where-not-to-grab">Where and where not to grab</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-translator-touchscreen">Using the translator touchscreen</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sample-rotation">Sample rotation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sample-translation">Sample translation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fast-manual-translation">Fast Manual Translation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#slow-automatic-translation">Slow Automatic Translation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-considerations">Other considerations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#changing-pressure-too-quickly">Changing pressure too quickly</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mechanical-failure-points">Mechanical failure points</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mfc/">Using the mass flow controller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Standard Operating Procedures &raquo;</li>
+      <li>Using the translators</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="translator-control">Translator Control</h1>
+<h2 id="translator-design">Translator Design</h2>
+<p>There are two generations of translator units - the first generation has slightly thinner diameter lead screw and keyed shaft. The second generation has a thicker lead screw and keyed shaft.</p>
+<p><img alt="" src="../../img/translatorlabeled.png" /></p>
+<hr />
+<h2 id="raising-and-lowering-the-translator-housings">Raising and lowering the translator housings</h2>
+<h3 id="counterweight-system">Counterweight system</h3>
+<p>Each translator is quite heavy, and sliding it up and down on the furnace framing is facilitated by iron counterweights which attach the translators via a cable-pulley system. Each counterweight is equipped with a so-called "handbrake" which can be tightened to lock its position.</p>
+<h3 id="where-and-where-not-to-grab">Where and where not to grab</h3>
+<p><img alt="" src="../../img/wheretotouch.png" width="400" /></p>
+<hr />
+<h2 id="using-the-translator-touchscreen">Using the translator touchscreen</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There are <strong>several important considerations</strong> when using the translators:</p>
+<ol>
+<li>
+<p>Never allow the translators to reach their maximum translation limits. There are limit switches to automatically stop translation once these limits are reached, but they are not guaranteed to work and failure here can cause costly damage to the translator units.</p>
+</li>
+<li>
+<p>The translators should never translate without rotation enabled.</p>
+</li>
+<li>
+<p>Always MODIFY the automatic translation speed before enabling slow automatic translation - there is a software error that can lead to accidental fast translation if the speed has remained unmodified for an extended period of time. Specifically, we suspect that this occurs only after the <strong>2-finger automatic fast gear mode</strong> (see below) has been used and the automatic translation speed has not been changed since this mode.</p>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../../img/translatortouchscreen.png" /></p>
+<p>The translators are controlled entirely via the touchscreen monitor next to the computers. Each of the buttons is used by tapping once, with the exception of the <code>Fast Gear</code> fast translation buttons which must be held down constantly.</p>
+<hr />
+<h2 id="sample-rotation">Sample rotation</h2>
+<p>To enable rotation, simply tap the CW or CCW buttons and the shaft will begin to rotate. The default speed is 10 revolutions per minute, which can be adjusted by adding or subtracting values using the +/- buttons under the rpm readout. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong><em>It is recommended to avoid using the +/- 10 rpm buttons</em></strong>, as these can cause decoupling of the magnet pack and/or failure of the rotation motor.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The rotation rate has been shown to work up to 45 rpm. Some translators seem to have issues rotating at certain speeds (e.g., near 15 rpm) due to friction. </p>
+</div>
+<hr />
+<h2 id="sample-translation">Sample translation</h2>
+<h3 id="fast-manual-translation">Fast Manual Translation</h3>
+<p>To use fast manual translation, with rotation enabled, simply long-press the <code>Fast Gear</code> up/down arrows and the shaft will translate as long as the button is held down.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>2-finger automatic fast gear mode</strong></p>
+<p>To long-press the <code>Fast Gear</code> buttons without needing to keep your finger on the screen, you may use a 1-finger press on the button followed by adding a second finger nearby on the screen, followed by releasing both fingers at the same time. Be cautious to not allow the fast gear to take the translator motors to their extreme limits - keep watch of the translators in this mode and tap the button again to disable.</p>
+</div>
+<h3 id="slow-automatic-translation">Slow Automatic Translation</h3>
+<p>To use slow automatic translation, set a translation speed in mm/hr using the +/- buttons under the speed readout. <em>See warning at the top of this page about errors that can cause the software to accidentally ignore this speed and "fast move".</em></p>
+<p>Then, with rotation enabled, tap the <code>Automatic</code> up/down buttons to begin translation.</p>
+<h2 id="other-considerations">Other considerations</h2>
+<h3 id="changing-pressure-too-quickly">Changing pressure too quickly</h3>
+<p>Changing the pressure too quickly can violently force the translator shaft in or out of the pressure tube, decoupling it from the magnet pack and potentially damaging equipment / samples. Always pressurize and depressurize slowly to avoid this.</p>
+<h3 id="mechanical-failure-points">Mechanical failure points</h3>
+<p><strong>Snapped shaft</strong>
+The most catastrophic failure has been mechanical failure of the attachment between the shaft and the inner magnet back at its base. The shaft is weakly attached here and even gentle torquing of the shaft can cause failure over time.</p>
+<p><img alt="" src="../../img/brokenshaft.png" width="500" /></p>
+<p><strong>Friction in bearings</strong>
+The translators don't have any sort of lubrication. The shaft is meant to simply glide about some plain bearings made of white plastic (Teflon?). These bearings quickly become contaminated with volatilized powder from various growths, and the translator shafts will start to squeak and vibrate as a result. Cleaning this requires opening up the translators which is quite tedious and labor and time intensive - and can be costly if done incorrectly - thus, we tend to live with such vibrations until it is absolutely necessary to replace / clean the bearings. See the Maintenance section for more information.</p>
+<p><img alt="" src="../../img/bearings.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../thermocouples/" class="btn btn-neutral float-left" title="Using the thermocouples"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mfc/" class="btn btn-neutral float-right" title="Using the mass flow controller">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../thermocouples/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mfc/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Using the camera - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using the camera";
+        var mkdocs_page_input_path = "sops\\imaging.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/startupguide/">Startup Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/shutdownguide/">Shutdown Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lasercontrol/">Using the lasers</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the camera</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-i-using-the-camera-software">Section I: Using the camera software</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-ii-adjusting-the-camera-focusing-optics">Section II: Adjusting the camera focusing optics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#to-adjust-brightness">To adjust brightness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#to-adjust-focus">To adjust focus</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recommended-camera-settings-for-aiming-beam">Recommended camera settings for aiming beam</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recommended-camera-settings-for-infrared-beam">Recommended camera settings for infrared beam</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../translatorcontrol/">Using the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mfc/">Using the mass flow controller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Standard Operating Procedures &raquo;</li>
+      <li>Using the camera</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="using-the-camera">Using the camera</h1>
+<h2 id="section-i-using-the-camera-software">Section I: Using the camera software</h2>
+<ol>
+<li>
+<p>The software "Pylon Viewer" is used to view live video feed from the camera. To open pylon viewer, click on the following icon (pinned to the Taskbar).</p>
+<p><img alt="camerasoftware.png" src="../../img/pylon.png" /></p>
+</li>
+<li>
+<p>Once Pylon Viewer is open, navigate to <code>Window &gt; Devices</code> to open the Devices menu.</p>
+<p><img alt="devices.png" src="../../img/devices.png" /></p>
+</li>
+<li>
+<p>To connect to the camera, double click <code>Basler acA1300-75gc</code>, or single-click then press the "Open Device" button in the top left. </p>
+<p><img alt="devices2.png" src="../../img/devices2.png" /></p>
+</li>
+<li>
+<p>To obtain live video feed, click the "Continuous Shot" button on the main toolbar.</p>
+<p><img alt="continuousshot.png" src="../../img/continuousshot.png" /></p>
+</li>
+<li>
+<p>To adjust image settings, go to <code>Window &gt; Features - All</code> to open the Features toolbar.</p>
+<p><img alt="featuresall.png" src="../../img/featuresall.png" /></p>
+</li>
+<li>
+<p>To adjust the exposure time, change the value found in <code>Acquisition Controls &gt; Exposure Time (Abs)</code>. The maximum exposure time is typically 100,000 ms (when using aiming beam, for example), and the minimum is 100 ms (for a particularly bright growth).</p>
+<p><img alt="exposure.png" src="../../img/exposure.png" /></p>
+</li>
+</ol>
+<h2 id="section-ii-adjusting-the-camera-focusing-optics">Section II: Adjusting the camera focusing optics</h2>
+<h3 id="to-adjust-brightness">To adjust brightness</h3>
+<p>To adjust the aperture (brightness) manually turn the front tab knob on the focusing optic attached to the camera. To further dim the brightness use a neutral density (ND) filter which you can slide into place.</p>
+<h3 id="to-adjust-focus">To adjust focus</h3>
+<p>Manually turn the outer knob on the focusing optic attached to the camera.</p>
+<p><img alt="camerafilters.png" src="../../img/camerafilters.png" />
+<img alt="focus.png" src="../../img/focus.png" /></p>
+<h2 id="recommended-camera-settings-for-aiming-beam">Recommended camera settings for aiming beam</h2>
+<ul>
+<li><strong>Exposure Time (ms)</strong> = 100,000</li>
+<li><strong>Filter</strong> = No ND filter, shortpass filter optional</li>
+<li>Aiming beam on for lasers 2, 3, 5, 6, and 7. (Not lasers 1 and 4 where the camera and pyrometer are)</li>
+</ul>
+<h2 id="recommended-camera-settings-for-infrared-beam">Recommended camera settings for infrared beam</h2>
+<ul>
+<li><strong>Exposure Time (ms)</strong> = 100 to 20,000</li>
+<li><strong>Filter</strong> = ND1, ND2, or ND4 in place, in addition to shortpass filter.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../lasercontrol/" class="btn btn-neutral float-left" title="Using the lasers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../pyrometer/" class="btn btn-neutral float-right" title="Using the pyrometer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../lasercontrol/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../pyrometer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

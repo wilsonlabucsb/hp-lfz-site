@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Using the lasers - High-Pressure Laser Floating Zone Lab</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using the lasers";
+        var mkdocs_page_input_path = "sops\\lasercontrol.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> High-Pressure Laser Floating Zone Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/startupguide/">Startup Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/shutdownguide/">Shutdown Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Standard Operating Procedures</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sampleprep/">Making feed and seed rods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Mounting and aligning sample</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the lasers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#section-i-startup">Section I: Startup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-ii-basic-labview-working-principles">Section II: Basic LabVIEW working principles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-iii-enabling-communication-with-the-lasers">Section III: Enabling communication with the lasers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-iv-using-the-aiming-beam-visible-red-light">Section IV: Using the aiming beam (visible red light)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-v-using-the-infrared-beam-1070-nm-light">Section V: Using the infrared beam (1070 nm light)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#section-vi-setting-the-laser-output-power">Section VI: Setting the laser output power</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#set-power-manually-choose-setpoint">Set Power: Manually choose setpoint</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ramp-power-automatic-power-ramping">Ramp Power: Automatic power ramping</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set-pulsing-reduce-laser-power-by-pulsing-laser-onoff">Set Pulsing: Reduce laser power by pulsing laser on/off</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../imaging/">Using the camera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pyrometer/">Using the pyrometer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../thermocouples/">Using the thermocouples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../translatorcontrol/">Using the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mfc/">Using the mass flow controller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lowp/">Using the low-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highp/">Using the high-pressure gas manifold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sealing/">Sealing the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../begingrowth/">Beginning a growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../endgrowth/">Ending a growth</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced maintenance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignlasers/">Aligning the laser optics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/spotsize/">Changing the laser spot size</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/opentranslator/">Opening/sealing the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/alignseals/">Aligning the sealing surfaces</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../advanced/lubricatetranslators.md.md">Lubricating the translators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installchamberwindow/">Installing new chamber windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/preparenewinconel/">Preparing newly machined Inconel 718</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/deepcleanchamber/">Deep cleaning the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/leakcheckchamber/">Leak checking the chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/maintainchiller/">Maintaining the chiller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/installcoolinglines/">Installing the cooling lines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/replacegasbottle/">Replacing the gas bottle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advanced/repaircompressor/">Repairing the compressor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Useful information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/furnacedesign/">Furnace Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/labview/">Laser Controller LabVIEW</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/localnetwork/">Local network configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/swagelok/">Swagelok piping (low-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/maxpro/">MaxPro piping (high-P)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../info/modifysite/">Modifying this site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../access/">Lab Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../poweron/">Equipment Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gascontrol/">Pressurizing the Chamber</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../growth.md">Beginning a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../endgrowth.md">Ending a Growth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../maintenance/">Maintenance</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">High-Pressure Laser Floating Zone Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Standard Operating Procedures &raquo;</li>
+      <li>Using the lasers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="using-the-lasers">Using the lasers</h1>
+<p><strong>Purpose</strong>: To give users an overview of how to use the lasers during a typical growth. For more detailed information about the laser units (including binary commands, pinout diagrams, etc.) see the <a href="https://drive.google.com/drive/folders/1485noFCRa_4wWjhWcXW_ydtBLUo0RgD-?usp=drive_link">IPG Laser User Guide</a>.</p>
+<hr />
+<h2 id="section-i-startup">Section I: Startup</h2>
+<ol>
+<li>Turn the key on the front of each laser unit to the "ON" position. The touchscreen on each laser should turn on.
+    <img alt="../img/laser_unit_front_cartoon.png" src="../../img/laser_unit_front_cartoon.png" /></li>
+<li>Click the "LOKII Laser Controller Project" on the taskbar.
+   <img alt="../img/laser_software.png" src="../../img/laser_software.png" /></li>
+<li>
+<p>The software should open and prompt for the creation of a logfile. </p>
+<p><img alt="logfile" src="../../img/logfile_prompt.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the logfile prompt does not pop up, this means that the software is not communicating correctly with the lasers and must be restarted.</p>
+</div>
+<p>When not being used for a growth, a dummy logfile "test.txt" can be used. For a growth, create a new logfile following the naming convention of previous files to keep files organized.</p>
+<p><em>Example filename:</em> <code>"20230515_Log100_Sr2IrO4_growth50.txt"</code></p>
+<ul>
+<li>The <code>log</code> number is determined by the numbering of the logfiles in the <a href="https://drive.google.com/drive/folders/1A3_43n8ItInI4Z7pf4uCt52mfkHWRzl-?usp=drive_link">Growth Logs</a> folder in the <a href="https://drive.google.com/drive/folders/1-5bD7GNJCqUvJMFQOrpgeaQlDUMaeCdf?usp=drive_link">LOKII Google Drive</a>.</li>
+<li>The <code>growth</code> number is determined by how many times this material has been grown in the furnace.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="section-ii-basic-labview-working-principles">Section II: Basic LabVIEW working principles</h2>
+<p>The LabVIEW software is built to run in a continunous <code>while</code> loop, which only stops when the large red STOP (<img alt="labviewstop" src="../../img/labviewstop.png" width="50" />) button is pressed. The current step is indicated by the <code>Step</code> text box indicator on the top of the Laser Controller.</p>
+<p>While understanding the function of each step in the while loop is not important for the general user, the details can be found in a later section. The important thing to understand is that <strong><em>your actions in LabVIEW are not put into effect until the loop has completed the next full cycle</em></strong>. </p>
+<p>This results is some <strong><em>delays</em></strong> between, for example, when you click the <code>Aiming Beam</code> button and when the aiming beam actually turns on.</p>
+<hr />
+<h2 id="section-iii-enabling-communication-with-the-lasers">Section III: Enabling communication with the lasers</h2>
+<p>On the left hand side of the Laser Controller, there are 7 buttons enabling communication with each of the laser units, shown here:</p>
+<p><img alt="lasercommunication" src="../../img/lasercommunication.png" /></p>
+<p>In the scenario pictured above, all lasers will receive commands as indicated by the illuminated green light on each button. In the case that you want to send a command to a select few lasers, only enable the communication button for those lasers, and disable communication for the rest.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><img alt="selectfew" src="../../img/selectfew.png" /></p>
+</div>
+<hr />
+<h2 id="section-iv-using-the-aiming-beam-visible-red-light">Section IV: Using the aiming beam (visible red light)</h2>
+<p>For sample alignment, beam alignment, and beam focusing, the lasers offer a visible red laser light source called the "aiming beam". This radiation is visible, and is relatively low power. <strong>While this red light is not as powerful as the infrared light, it can still cause damage to the eyes.</strong></p>
+<p>To enable the aiming beam, enable communication with any of lasers 2, 3, 5, 6 or 7 and click the <code>Aiming Beam</code> button on the Laser Controller.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Avoid using the aiming beam on lasers 1 and 4. Here, the semi-transparent mirrors in front of the camera and pyrometer are transparent to this red light and the aiming beam will effectively blind the camera on windows 1 and the pyrometer on window 4.</p>
+</div>
+<p><img alt="turnonaimingbeam.png" src="../../img/turnonaimingbeam.png" /></p>
+<hr />
+<h2 id="section-v-using-the-infrared-beam-1070-nm-light">Section V: Using the infrared beam (1070 nm light)</h2>
+<p>For delivering heating power to a sample, use the infrared beam, which has a wavelength of 1070 nm and a maximum power output of 200 W. There are several steps to using the infrared beam.</p>
+<ol>
+<li>Press the green <code>Start</code> button on the front of each laser unit to <em>arm</em> the lasers for emission. You will hear the cooling fans spin up on each unit. This does not mean laser light is being emitted at this point, but laser goggles and curtains should be used at all times when the lasers are in this state (see <a href="#1-laser-safety">Laser Safety</a>).
+    <img alt="pressstart.png" src="../../img/pressstart.png" /></li>
+<li>Ensure that the proper filtering optics are in place:<ul>
+<li>The pyrometer requires a notch filter (blocks light near 1064 nm) 
+<img alt="notch" src="../../img/notch.png" /></li>
+<li>The camera requires a short pass filter (allows wavelengths shorter than 750 nm to be transmitted) and, if desired, a neutral density filter (options: ND1, ND2, ND4 (darkest)) to dim the intensity of all wavelengths of light
+<img alt="camerafilters" src="../../img/camerafilters.png" /></li>
+</ul>
+</li>
+<li>Verify that the <code>Current Setpoint (%)</code> is at the expected value before turning <code>Emission On</code>. <code>RCS: 0.0</code> means that the setpoint is 0% of the total current (equivalent to a power of 0 watts), and <code>RCS: 100.0</code> means that the setpoint is 100% of the total current (equivalent to the maximum power of 200 watts). <strong>Typically, the lasers should be at <code>RCS: 0.0</code> before you click <code>Emission On</code>.</strong>
+    <img alt="emon" src="../../img/emon.png" /></li>
+<li>Perform a safety check before turning on emission:<ul>
+<li>Laser safety sign attached to door</li>
+<li>Laser safety goggles on</li>
+<li>Laser curtains closed</li>
+<li>All lasers and optics securely attached to furnace</li>
+<li><code>Current Setpoint (%)</code> at expected value</li>
+</ul>
+</li>
+<li>Click <code>Emission On</code>. You should see the orange LED bar on the front of each laser unit flash three times and stay illuminated. <strong><em>This means that the infrared beam is emitting light - be cautious.</em></strong>
+   <img alt="ledbar.png" src="../../img/ledbar.png" /></li>
+</ol>
+<hr />
+<h2 id="section-vi-setting-the-laser-output-power">Section VI: Setting the laser output power</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These commands only set the power for the lasers for which <code>Laser Communication</code> is enabled. The power setpoint for the other lasers will remain unmodified in this case.</p>
+</div>
+<p>Three tabs <strong>Set Power, Ramp Power, and Set Pulsing</strong> in the center of the laser controller are used as inputs to control the laser output power.</p>
+<p><img alt="tabs" src="../../img/tabs.png" /></p>
+<h4 id="set-power-manually-choose-setpoint"><code>Set Power</code>: Manually choose setpoint</h4>
+<p>Using the <strong>Set Power</strong> tab, enter a power in the <code>Power (W)</code> input field, and press the <code>Set Power</code> button to set the power.</p>
+<h4 id="ramp-power-automatic-power-ramping"><code>Ramp Power</code>: Automatic power ramping</h4>
+<p><img alt="ramppower" src="../../img/ramppower.png" /></p>
+<ol>
+<li>
+<p>Using the <strong>Ramp Power</strong> tab, enter the desired power setpoint in the <code>Target Power (W)</code> field and a ramp rate (1 W/min is a safe value to start) in the <code>Ramp Rate (W/min)</code> field.</p>
+</li>
+<li>
+<p>Click <code>Calculate Ramp</code> to set the values and calculate a <code>Ramp Time (min)</code> displayed in the top right.</p>
+</li>
+<li>
+<p>With <code>Emission on/off</code> set to on, click <code>Ramp!</code> to begin ramping the power to the desired setpoint. The graph below shows the average output power among the seven lasers. The green <code>Ramping</code> indicator under the <code>Ramp Time (min)</code> indicator illuminates to bright green.</p>
+</li>
+<li>
+<p>To stop the ramp, click the small <code>STOP</code> button to the right of the <code>Ramping</code> indicator. This pauses the ramp at the current setpoint.</p>
+<p><img alt="" src="../../img/rampstop.png" width="200" /></p>
+</li>
+<li>
+<p>Optionally, you may change the target power or the ramp rate when the ramp is stopped - to do so, simply enter new values and click the <code>Calculate Ramp</code> button to save these changes.</p>
+</li>
+<li>
+<p>To resume the ramp, click the <code>Ramp!</code> button.</p>
+</li>
+<li>
+<p>Once the setpoint reaches the target power, the ramp will stop automatically.</p>
+</li>
+</ol>
+<h4 id="set-pulsing-reduce-laser-power-by-pulsing-laser-onoff"><code>Set Pulsing</code>: Reduce laser power by pulsing laser on/off</h4>
+<p>The laser units are equipped with an internal pulsing control which allows the beam to pulse at a chosen frequency with chosen pulse width. These are set using the <strong>Set Pulsing</strong> tab. </p>
+<p>In order for pulsing mode to actually emit light, a constant DC signal must be applied to terminals on the back of each laser unit. To accomplish this, a simple DC power supply rests near the top of the server rack. To enable, simply turn on the power switch on the left hand side of the DC Power Supply unit, and then send the DC signal by pressing the blue <code>Output On/Off</code> button on the front panel of the unit.</p>
+<p><img alt="" src="../../img/powersupply.png" /></p>
+<p>Set a desired pulse width in ms by entering a value in the <code>Pulse Width (ms)</code> field and click <code>Set Pulse Width</code>. Click <code>Pulsing on/off</code> to enable the pulsing mode on the lasers - the <code>Pulsing enabled:</code> indicators near the lower left of the Laser Controller should glow orange for each laser (1 through 7) which has pulsing enabled.</p>
+<p><img alt="" src="../../img/pulsingcontrol.png" /></p>
+<p>The default pulse frequency or <strong>Pulse Repetition Rate (Hz)</strong> as labeled in the Laser Controller software is 100 Hz - meaning that 100 pulses occur per second, equivalent to one pulse every 10 ms.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Duty_cycle">duty cycle</a> is then controlled exclusively by the pulse width, meaning that a pulse with of 5 ms corresponds to a duty cycle = 50% as shown below. In the default configuration, the duty cycle can be calculated using the forumla <span class="arithmatex">\(\rm{Duty} = \rm{Width}/10~\rm{ms} \times 100\%\)</span>.</p>
+<p><img alt="" src="../../img/dutycycle.png" width="200" /></p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../samplemounting/" class="btn btn-neutral float-left" title="Mounting and aligning sample"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../imaging/" class="btn btn-neutral float-right" title="Using the camera">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../samplemounting/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../imaging/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
