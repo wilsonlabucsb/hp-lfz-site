@@ -2,6 +2,8 @@
 
 This page is intended to serve as a FAQ of sorts, so that users can find answers if they are experiencing a known issue.
 
+---
+
 Issue: Shaft vibrates when rotating.
 
 Solution: Lubricate the length of the translator shaft with MoS$_2$ - grab a small vial and pour in a small amount of MoS$_2$ powder. Add some IPA or EtOH to create a suspension and sonicate to mix.
