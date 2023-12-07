@@ -1,6 +1,6 @@
 # Aligning the laser optics
 
-This tutorial assumes the lasers are almost completely disassembled.
+This tutorial assumes the laser optics are almost completely disassembled.
 
 ## Section I: Laser collimators
 
