@@ -29,4 +29,11 @@ The in-plane viewing optics arrays are located on windows (lasers) 1 and 4 of th
 
 The circular clamp is first placed on the window as shown below, and tightened using set screws on the shoulder. These should be tightened evenly, because if one is sticking out more than the other, then it will prevent the next clamp from sitting flush around the circular outer diameter.
 
-The next clamp is a square piece with a ciruclar cut-out in the middle, which mounts onto the circular clamp which should already be installed on the window. This clamp is tightened using two shoulder screws. It is imperative that these 
+The next clamp is a square piece with a ciruclar cut-out in the middle, which mounts onto the circular clamp which should already be installed on the window. This clamp is tightened using two shoulder screws. It is imperative that these are secure, because if these fall off at any point while the lasers are on, that could be a dangerous situation.
+
+Next, there is a lens tube that can screw onto the top face of the assembly of the two plates. The distance of the lens from the bottom of the tube controls the size of the spot at the sample position. Make sure that the lens and the tube are mounted at an angle where the lens focuses the light exclusively in the vertical direction. This can take a few tries to get right: it is recommended to install the lens tube onto the plate assembly first (without the lens inside). Then, with the lens tube secure and unable to rotate freely, install the lens in the correct orientation and tighten the retaining rings.
+
+Next, there is a 45-degree kinematic mount from Thorlabs that holds a round, broad-band mirror which can be rotated along two axes in the mount.
+This is then followed by a custom aluminum piece that uses Thorlabs slip rings to hold onto the IPG Photonics collimating optics at the end of the laser fiber.
+
+After assembly, metal shards from the threads of various parts can fall onto the lenses and mirrors. Carefully blow away (using "canned air") any particulates off the surface of these optics to avoid local heating and melting of these parts. Ensure that this is done before the beam is first turned on.
