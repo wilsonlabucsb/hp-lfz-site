@@ -38,6 +38,7 @@ nav:
       - Local network configuration: info/localnetwork.md
       - Swagelok piping (low-P): info/swagelok.md
       - MaxPro piping (high-P): info/maxpro.md
+      - Suppliers for various consumables: info/suppliers.md
       - Modifying this site: info/modifysite.md
     - Other:
       - Lab Access: access.md
