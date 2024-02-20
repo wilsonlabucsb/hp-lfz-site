@@ -4,7 +4,7 @@ For more permanent parts, see the [LAPIS Parts List](https://docs.google.com/spr
 
 ## Shroud
 - Cylindrical windows are 22x24 fused quartz tubing from Technical Glass Products ([link](https://technicalglass.com/product/fused-quartz-tubing-22x24/))
-- Ask TGP if they can cut the tubing into 15 mm tall cylinders, otherwise you will have to ask someone in the chemistry glass shop to cut it, and they really don't enjoy cutting glass for us.
+- Ask TGP if they can cut the tubing into 15 mm (+/- 0.5 mm) tall cylinders, otherwise you will have to ask someone in the chemistry glass shop to cut it, and they really don't enjoy cutting glass for us.
 
 ## Sample mounts / shaft pieces
 - Order the feed and seed holders from SciDre. They are relatively expensive.
