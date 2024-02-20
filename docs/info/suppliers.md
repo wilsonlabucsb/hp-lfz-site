@@ -1,6 +1,6 @@
 # Suppliers for various consumables
 
-For more permanent parts, see the [LAPIS Parts List]() on the Google Drive. 
+For more permanent parts, see the [LAPIS Parts List](https://docs.google.com/spreadsheets/d/17jvw7dukA4UU4l6dHvRP12d6tl1QzgLI/edit?usp=sharing&ouid=113393530670482605273&rtpof=true&sd=true) on the Google Drive. 
 
 ## Shroud
 - Cylindrical windows are 22x24 fused quartz tubing from Technical Glass Products ([link](https://technicalglass.com/product/fused-quartz-tubing-22x24/))
