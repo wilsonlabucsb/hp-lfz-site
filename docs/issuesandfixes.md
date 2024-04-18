@@ -48,4 +48,4 @@ Solution: This is a known bug in the translator software. This occurs if you use
 
 Issue: The logfile prompt on the LabVIEW software is not appearing / the lasers are not responding or connecting to PC2.
 
-Solution: If none of the lasers are successfully communicating with PC2, try restarting the Netgear box by unplugging its power supply and then reconnecting. If that doesn't work, try verifying that each individual laser is working correctly by directly connecting an ethernet cable between the computer and ONE laser and try pinging that laser's IP address from the command prompt using "ping 192.168.3.23X" where X is the laser number.
+Solution: If none of the lasers are successfully communicating with PC2, try restarting the Netgear box by unplugging its power supply and then reconnecting. If that doesn't work, try verifying that each individual laser is working correctly by directly connecting an ethernet cable between the computer and ONE laser and try pinging that laser's IP address from the command prompt using "ping 192.168.3.23X" where X is the laser number. See information on the "Local network configuration" page.
