@@ -8,4 +8,7 @@ It should be noted that the ethernet card on the PC can ONLY be used to connect 
 
 The IP address of each laser can be modified from the touchscreen on the front panel of the laser unit, by tapping on the IP address at the bottom of the screen and then tapping on the IP address. The first three parts of the IP address must match that of the computer (192.168.3.xxx) in order for the devices to be able to communicate with each other.
 
+!!! tip
+    If none of the lasers are successfully communicating with PC2, then try restarting the Netgear box by unplugging its power supply and then reconnecting.
+
 ![network_layout.png](..%2Fimg%2Fnetwork_layout.png)
