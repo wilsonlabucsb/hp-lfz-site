@@ -11,6 +11,7 @@ The compressor is controlled by a compressed air supply, connected to the buildi
 
 There is also a pressure limit switch attached the compressor, it is a hex nut with small holes in the side of the hex (need picture here!). Tightening this nut will increase the maximum pressure of the compressor -- be cautious not to increase this beyond the maximum pressure of the components downstream.
 
-the difference between the gauges on the inlet and outlet lines (i.e., outlet might read zero and the other might not, which indicates a dangerous state because the outlet lines are plugged).
+!!! warning
+    The gauges on the inlet and outlet lines are not to be treated as identical. The most dangerous situation is where the outlet might read zero and the inlet does not, which indicates a dangerous state because the outlet lines are plugged. Therefore, the chamber should NOT be opened and the remaining pressure should be vented by slightly opening a high-pressure connection close to the chamber.
 
 More details about the MaxPro cone and thread seals can be found the MaxPro page.
