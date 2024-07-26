@@ -71,7 +71,9 @@ The volatilization of material during growth cannot be completely mitigated by t
 
 ## Sealing the Destec Clamps
 
-The Destec clamps are sealed using a set of four bolts and eight nuts. The nuts and bolts should be assembled as in the following image, where the bolt is flush with the nut on one side of the clamp and protruding past the nut on the opposite side. 
+The Destec clamps are sealed using a set of four bolts and eight nuts. Ideally, the clamp slides smoothly over the inconel adapters, to optimize self-alignment of the parts. To this end, it is recommended to maintain a light coating of MoS$$_2$$ powder on the interior of the clamps and on the exterior of the adapter. This can be achieved by taking a small amount of MoS$$_2$$ powder between your fingers (gloved, of course), and rubbing it inside the clamp. This doesn't need to happen every time, but the coating should be re-applied if the clamps are getting stuck on the furnace after a growth is complete.
+
+The nuts and bolts should be assembled as in the following image, where the bolt is flush with the nut on one side of the clamp and protruding past the nut on the opposite side. 
 
 The nuts have two distinct faces: one side is flat and dull with some text, while the other side is shiny and curved and plain. The shiny, curved side needs to be oriented to face the clamps, and the dull, flat, labeled side needs to face away from the clamp.
 
