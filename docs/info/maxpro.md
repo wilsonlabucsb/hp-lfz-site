@@ -1,7 +1,7 @@
 All fittings employed on the high-pressure side of the compressor are rated to the elevated operating pressures of 15kpsi. Instead of simple swage connections we employ coned-and-threaded connections which can be used to much higher pressures. Specifically, we are using the medium pressure version which generally are rated to at least 15kpsi (although in practice most are rated to 21kpsi).
 Again, all parts were oxygen cleaned by the manufacturer!  This needs to be specified when requesting the quote.
 Mounting instructions for these parts can be found on the following page:
-https://high-pressure-products.maxprotech.com/viewitems/technical-information/on-assembly-of-standard-coned-threaded-connections
+[https://high-pressure-products.maxprotech.com/viewitems/technical-information/on-assembly-of-standard-coned-threaded-connections](https://high-pressure-products.maxprotech.com/viewitems/technical-information/on-assembly-of-standard-coned-threaded-connections)
 the Swagelok website has similar coned-and-threaded parts with associated manual. However, Swagelok do not recommend mixing the parts.
 It is important not to exceed the torque values given in the following table:
 
