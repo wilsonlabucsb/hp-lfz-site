@@ -4,6 +4,13 @@ Diagram of high-pressure manifold, true to its layout in real life. Perhaps a cl
 
 Description of the difference between the ball valves and the needle valves.
 
-Include information about how to use the compressor, including how to turn on the compressed air, how to adjust the air drive regulator to control the compressor rate, the procedure for gradually increasing the air drive regulator pressure when trying to reach high pressure (in order to keep the compressor from stroking too fast), how to set the pressure limiter on the compressor by turning it, the difference between the gauges on the inlet and outlet lines (i.e., outlet might read zero and the other might not, which indicates a dangerous state because the outlet lines are plugged).
+The compressor is controlled by a compressed air supply, connected to the building air supply. The regulator between the house air connection and the compressor is meant to regulate the drive air which controls the rate of the compressor strokes. **It is important to make sure that the regulator setting is appropriate for the current pressure of the chamber.** This means that, when beginning to pressurize using the compressor (near 1,000 psi), the air regulator should be mostly unscrewed -- just tight enough to make the compressor stroke slowly.
 
-Do not include any information about the MaxPro cone and thread seals, save it for the MaxPro page.
+!!! warning
+    If the compressor is run at "full speed" (i.e., the air regulator is always set to a high drive pressure), then the high pressure O-rings within the compressor will quickly become damaged and the compressor will cease to work. It is therefore recommended that the air regulator pressure be **slowly increased** while pressurizing the chamber. Higher gas pressures will demand higher air regulator pressures. Try to keep a moderate pace of the compressor strokes to extend the O-ring lifetime.
+
+There is also a pressure limit switch attached the compressor, it is a hex nut with small holes in the side of the hex (need picture here!). Tightening this nut will increase the maximum pressure of the compressor -- be cautious not to increase this beyond the maximum pressure of the components downstream.
+
+the difference between the gauges on the inlet and outlet lines (i.e., outlet might read zero and the other might not, which indicates a dangerous state because the outlet lines are plugged).
+
+More details about the MaxPro cone and thread seals can be found the MaxPro page.
