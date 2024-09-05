@@ -16,7 +16,7 @@ Opening the translator from the adapter side:
 Opening the translator from the motor side:
 
 - There are four bolts, similar to the adapter side (see above) which can be removed in a similar fashion. Instead of mating to the inconel adapter, in this case they are mated to an inconel block called the "flange". This flange has a similar cone and thread seal, except the inverted cone leads to a dead end. Similar to when removing the adapter, one should take care to not scratch the sealing surface when removing the flange.
-- Once the flange is removed, the shaft can be easily slid out the open end of the pressure tube. The first thing that will come out is the magnet back at the shaft's base, and then the shaft itself. The shaft is attracted to the exterior magnet pack, so be cautious as you remove it to protect it from snapping off the interior magnet pack at its base.
+- Once the flange is removed, the shaft can be easily slid out the open end of the pressure tube. The first thing that will come out is the magnet pack at the shaft's base, and then the shaft itself. The shaft is attracted to the exterior magnet pack (e.g., the shaft will be strongly pulled towards the walls of the tube) if it has slipped below the narrow-diameter bearing holder which keeps it centered, so be cautious as you remove it to protect it from snapping off the interior magnet pack at its base.
     
 !!! warning
     The shaft is weakly attached to the interior magnet pack with a tiny pin joint. This is liable to breaking and is a cause for sending the translators back to Dresden for repairs ($$$). Take care of the shaft.
