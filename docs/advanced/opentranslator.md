@@ -26,6 +26,8 @@ Opening the translator from the motor side:
 
 Resealing the cone and thread seals:
 
+The following steps are written assuming that you chose to open the adapter side rather than the motor side. If you chose the motor side, just follow the instructions for tightening the bolts and don't worry too much about the alignment. The bolts should still be evenly tightened, but in this case we do not have to worry about the **flange**-translator alignment (in contrast to the **adapter**-translator alignment, which is important).
+
 - To re-seal the adapter, first ensure that all parts are re-installed and that the sealing surfaces have been cleaned using a clean Kimwipe and alcohol.
 - Place the translator on the floor with the adapter side facing upward. It may be necessary to rest the flange on a block of wood or metal, in order to keep the weight off of the motor housings. A convenient object to use as a base for this purpose would be an old-generation adapter, which should have the exact same dimensions.
 - Carefully place the adapter onto the cone sealing surface, being careful not to cause any rubbing motions that could result in scratches. Try to place it such that the shaft is in the exact center of the adapter. The flat sides of the adapter also need to be perfectly parallel to the corresponding face on the translator. This can be aided by using a flat metal piece that can be affixed to the threaded holes on the side of the adapter using a bolt.
