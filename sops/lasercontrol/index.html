@@ -8,21 +8,20 @@
     <title>Using the lasers - High-Pressure Laser Floating Zone Lab</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
         var mkdocs_page_name = "Using the lasers";
-        var mkdocs_page_input_path = "sops\\lasercontrol.md";
+        var mkdocs_page_input_path = "sops/lasercontrol.md";
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -57,7 +56,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../samplemounting/">Mounting and aligning sample</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the lasers</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Using the lasers</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#section-i-startup">Section I: Startup</a>
     </li>
@@ -180,9 +179,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Standard Operating Procedures &raquo;</li>
-      <li>Using the lasers</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Standard Operating Procedures</li>
+      <li class="breadcrumb-item active">Using the lasers</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -307,7 +306,7 @@
 <p>Set a desired pulse width in ms by entering a value in the <code>Pulse Width (ms)</code> field and click <code>Set Pulse Width</code>. Click <code>Pulsing on/off</code> to enable the pulsing mode on the lasers - the <code>Pulsing enabled:</code> indicators near the lower left of the Laser Controller should glow orange for each laser (1 through 7) which has pulsing enabled.</p>
 <p><img alt="" src="../../img/pulsingcontrol.png" /></p>
 <p>The default pulse frequency or <strong>Pulse Repetition Rate (Hz)</strong> as labeled in the Laser Controller software is 100 Hz - meaning that 100 pulses occur per second, equivalent to one pulse every 10 ms.</p>
-<p>The <a href="https://en.wikipedia.org/wiki/Duty_cycle">duty cycle</a> is then controlled exclusively by the pulse width, meaning that a pulse with of 5 ms corresponds to a duty cycle = 50% as shown below. In the default configuration, the duty cycle can be calculated using the forumla <span class="arithmatex">\(\rm{Duty} = \rm{Width}/10~\rm{ms} \times 100\%\)</span>.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Duty_cycle">duty cycle</a> is then controlled exclusively by the pulse width, meaning that a pulse with of 5 ms corresponds to a duty cycle = 50% as shown below. In the default configuration, the duty cycle can be calculated using the forumla $\rm{Duty} = \rm{Width}/10~\rm{ms} \times 100\%$.</p>
 <p><img alt="" src="../../img/dutycycle.png" width="200" /></p>
 <h2 id="section-vii-restarting-the-laser-controller-software-while-using-lasers">Section VII: Restarting the laser controller software while using lasers</h2>
 <p>If you choose to restart the laser controller software, you should NOT close the window but instead use either the "stop sign" icon in the LabVIEW toolbar OR the "STOP" button on the front panel of the laser controller itself.</p>
@@ -347,17 +346,18 @@
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../javascripts/mathjax.js" defer></script>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
